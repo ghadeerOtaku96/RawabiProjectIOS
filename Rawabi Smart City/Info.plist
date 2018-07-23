@@ -41,5 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Fonts provided by Application</key>
+	<array>
+		<string>blackpool_gothic_nbp.ttf</string>
+		<string>Blackletter Buffoonery.otf</string>
+	</array>
 </dict>
 </plist>

@@ -8,13 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		14557CC22105F0AB0056859F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC12105F0AB0056859F /* main.m */; };
-		14557CC52105F0AB0056859F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC42105F0AB0056859F /* AppDelegate.m */; };
-		14557CC82105F0AB0056859F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC72105F0AB0056859F /* ViewController.m */; };
-		14557CCB2105F0AB0056859F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557CC92105F0AB0056859F /* Main.storyboard */; };
-		14557CCD2105F0AB0056859F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14557CCC2105F0AB0056859F /* Assets.xcassets */; };
-		14557CD02105F0AB0056859F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */; };
 		14557CDB2105F0AC0056859F /* Rawabi_Smart_CityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */; };
 		14557CE62105F0AC0056859F /* Rawabi_Smart_CityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */; };
+		14557D092105F1360056859F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D022105F1360056859F /* AppDelegate.m */; };
+		14557D0A2105F1360056859F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D042105F1360056859F /* ViewController.m */; };
+		14557D0B2105F1360056859F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557D052105F1360056859F /* Main.storyboard */; };
+		14557D0C2105F1360056859F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14557D062105F1360056859F /* Assets.xcassets */; };
+		14557D0D2105F1360056859F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557D072105F1360056859F /* LaunchScreen.storyboard */; };
+		14557D0E2105F1360056859F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14557D082105F1360056859F /* Info.plist */; };
+		14557D142105F16D0056859F /* welcomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D112105F16D0056859F /* welcomePageViewController.m */; };
+		14557D152105F16D0056859F /* contentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D132105F16D0056859F /* contentViewController.m */; };
+		14557D192105F1A70056859F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D182105F1A70056859F /* SignInViewController.m */; };
+		14557D1D2105F1BB0056859F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D1C2105F1BB0056859F /* SignUpViewController.m */; };
+		14557D2E2105F1F10056859F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D1F2105F1F10056859F /* View.xib */; };
+		14557D2F2105F1F10056859F /* customView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D212105F1F10056859F /* customView.m */; };
+		14557D302105F1F10056859F /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D222105F1F10056859F /* View2.xib */; };
+		14557D312105F1F10056859F /* customView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D242105F1F10056859F /* customView2.m */; };
+		14557D322105F1F10056859F /* View4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D252105F1F10056859F /* View4.xib */; };
+		14557D332105F1F10056859F /* customView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D272105F1F10056859F /* customView4.m */; };
+		14557D342105F1F10056859F /* View5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D282105F1F10056859F /* View5.xib */; };
+		14557D352105F1F10056859F /* customView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D2A2105F1F10056859F /* customView5.m */; };
+		14557D362105F1F10056859F /* employeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D2C2105F1F10056859F /* employeeView.m */; };
+		14557D372105F1F10056859F /* employeeViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D2D2105F1F10056859F /* employeeViewXIB.xib */; };
+		14557D3C2105F22C0056859F /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D3B2105F22C0056859F /* DLRadioButton.m */; };
+		14557D3F2105F2350056859F /* PSProfileStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D3E2105F2350056859F /* PSProfileStepper.m */; };
+		14557D432105F25F0056859F /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D422105F25F0056859F /* ACFloatingTextField.m */; };
+		14557D452105F28D0056859F /* uiStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14557D442105F28D0056859F /* uiStrings.strings */; };
+		14557D4D2105F2F30056859F /* KPDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D4C2105F2F30056859F /* KPDropMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +57,54 @@
 /* Begin PBXFileReference section */
 		14557CBD2105F0AB0056859F /* Rawabi Smart City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rawabi Smart City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14557CC12105F0AB0056859F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14557CC32105F0AB0056859F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		14557CC42105F0AB0056859F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14557CC62105F0AB0056859F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14557CC72105F0AB0056859F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		14557CCA2105F0AB0056859F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14557CCC2105F0AB0056859F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14557CCF2105F0AB0056859F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14557CD12105F0AB0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14557CD62105F0AC0056859F /* Rawabi Smart CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rawabi Smart CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rawabi_Smart_CityTests.m; sourceTree = "<group>"; };
 		14557CDC2105F0AC0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14557CE12105F0AC0056859F /* Rawabi Smart CityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rawabi Smart CityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rawabi_Smart_CityUITests.m; sourceTree = "<group>"; };
 		14557CE72105F0AC0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14557D012105F1360056859F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14557D022105F1360056859F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14557D032105F1360056859F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14557D042105F1360056859F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14557D052105F1360056859F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		14557D062105F1360056859F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14557D072105F1360056859F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14557D082105F1360056859F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14557D102105F16D0056859F /* welcomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomePageViewController.h; sourceTree = "<group>"; };
+		14557D112105F16D0056859F /* welcomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomePageViewController.m; sourceTree = "<group>"; };
+		14557D122105F16D0056859F /* contentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contentViewController.h; sourceTree = "<group>"; };
+		14557D132105F16D0056859F /* contentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contentViewController.m; sourceTree = "<group>"; };
+		14557D172105F1A70056859F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		14557D182105F1A70056859F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		14557D1B2105F1BB0056859F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		14557D1C2105F1BB0056859F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		14557D1F2105F1F10056859F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		14557D202105F1F10056859F /* customView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView.h; sourceTree = "<group>"; };
+		14557D212105F1F10056859F /* customView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView.m; sourceTree = "<group>"; };
+		14557D222105F1F10056859F /* View2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
+		14557D232105F1F10056859F /* customView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView2.h; sourceTree = "<group>"; };
+		14557D242105F1F10056859F /* customView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView2.m; sourceTree = "<group>"; };
+		14557D252105F1F10056859F /* View4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View4.xib; sourceTree = "<group>"; };
+		14557D262105F1F10056859F /* customView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView4.h; sourceTree = "<group>"; };
+		14557D272105F1F10056859F /* customView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView4.m; sourceTree = "<group>"; };
+		14557D282105F1F10056859F /* View5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View5.xib; sourceTree = "<group>"; };
+		14557D292105F1F10056859F /* customView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView5.h; sourceTree = "<group>"; };
+		14557D2A2105F1F10056859F /* customView5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView5.m; sourceTree = "<group>"; };
+		14557D2B2105F1F10056859F /* employeeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = employeeView.h; sourceTree = "<group>"; };
+		14557D2C2105F1F10056859F /* employeeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = employeeView.m; sourceTree = "<group>"; };
+		14557D2D2105F1F10056859F /* employeeViewXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = employeeViewXIB.xib; sourceTree = "<group>"; };
+		14557D3A2105F22C0056859F /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		14557D3B2105F22C0056859F /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		14557D3D2105F2350056859F /* PSProfileStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProfileStepper.h; sourceTree = "<group>"; };
+		14557D3E2105F2350056859F /* PSProfileStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProfileStepper.m; sourceTree = "<group>"; };
+		14557D412105F25F0056859F /* ACFloatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFloatingTextField.h; sourceTree = "<group>"; };
+		14557D422105F25F0056859F /* ACFloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFloatingTextField.m; sourceTree = "<group>"; };
+		14557D442105F28D0056859F /* uiStrings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = uiStrings.strings; sourceTree = "<group>"; };
+		14557D482105F2C30056859F /* Blackletter Buffoonery.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blackletter Buffoonery.otf"; sourceTree = "<group>"; };
+		14557D492105F2C30056859F /* blackpool_gothic_nbp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackpool_gothic_nbp.ttf; sourceTree = "<group>"; };
+		14557D4B2105F2F30056859F /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
+		14557D4C2105F2F30056859F /* KPDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDropMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +155,25 @@
 		14557CBF2105F0AB0056859F /* Rawabi Smart City */ = {
 			isa = PBXGroup;
 			children = (
-				14557CC32105F0AB0056859F /* AppDelegate.h */,
-				14557CC42105F0AB0056859F /* AppDelegate.m */,
-				14557CC62105F0AB0056859F /* ViewController.h */,
-				14557CC72105F0AB0056859F /* ViewController.m */,
-				14557CC92105F0AB0056859F /* Main.storyboard */,
-				14557CCC2105F0AB0056859F /* Assets.xcassets */,
-				14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */,
-				14557CD12105F0AB0056859F /* Info.plist */,
+				14557D4A2105F2DE0056859F /* KDropDownMenu */,
+				14557D402105F23B0056859F /* ACFloatingTextField */,
+				14557D392105F21B0056859F /* PSProfileStepper */,
+				14557D382105F20E0056859F /* DLRadio Button */,
+				14557D1E2105F1CF0056859F /* Custom Views */,
+				14557D1A2105F1AC0056859F /* SignUp */,
+				14557D162105F1900056859F /* SignIn */,
+				14557D0F2105F14E0056859F /* welcomePage */,
+				14557D012105F1360056859F /* AppDelegate.h */,
+				14557D022105F1360056859F /* AppDelegate.m */,
+				14557D032105F1360056859F /* ViewController.h */,
+				14557D042105F1360056859F /* ViewController.m */,
+				14557D052105F1360056859F /* Main.storyboard */,
+				14557D062105F1360056859F /* Assets.xcassets */,
+				14557D072105F1360056859F /* LaunchScreen.storyboard */,
+				14557D082105F1360056859F /* Info.plist */,
+				14557D472105F2B30056859F /* App Fonts */,
 				14557CC02105F0AB0056859F /* Supporting Files */,
+				14557D442105F28D0056859F /* uiStrings.strings */,
 			);
 			path = "Rawabi Smart City";
 			sourceTree = "<group>";
@@ -138,6 +202,102 @@
 				14557CE72105F0AC0056859F /* Info.plist */,
 			);
 			path = "Rawabi Smart CityUITests";
+			sourceTree = "<group>";
+		};
+		14557D0F2105F14E0056859F /* welcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				14557D102105F16D0056859F /* welcomePageViewController.h */,
+				14557D112105F16D0056859F /* welcomePageViewController.m */,
+				14557D122105F16D0056859F /* contentViewController.h */,
+				14557D132105F16D0056859F /* contentViewController.m */,
+			);
+			name = welcomePage;
+			sourceTree = "<group>";
+		};
+		14557D162105F1900056859F /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				14557D172105F1A70056859F /* SignInViewController.h */,
+				14557D182105F1A70056859F /* SignInViewController.m */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		14557D1A2105F1AC0056859F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				14557D1B2105F1BB0056859F /* SignUpViewController.h */,
+				14557D1C2105F1BB0056859F /* SignUpViewController.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		14557D1E2105F1CF0056859F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				14557D1F2105F1F10056859F /* View.xib */,
+				14557D202105F1F10056859F /* customView.h */,
+				14557D212105F1F10056859F /* customView.m */,
+				14557D222105F1F10056859F /* View2.xib */,
+				14557D232105F1F10056859F /* customView2.h */,
+				14557D242105F1F10056859F /* customView2.m */,
+				14557D252105F1F10056859F /* View4.xib */,
+				14557D262105F1F10056859F /* customView4.h */,
+				14557D272105F1F10056859F /* customView4.m */,
+				14557D282105F1F10056859F /* View5.xib */,
+				14557D292105F1F10056859F /* customView5.h */,
+				14557D2A2105F1F10056859F /* customView5.m */,
+				14557D2B2105F1F10056859F /* employeeView.h */,
+				14557D2C2105F1F10056859F /* employeeView.m */,
+				14557D2D2105F1F10056859F /* employeeViewXIB.xib */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		14557D382105F20E0056859F /* DLRadio Button */ = {
+			isa = PBXGroup;
+			children = (
+				14557D3A2105F22C0056859F /* DLRadioButton.h */,
+				14557D3B2105F22C0056859F /* DLRadioButton.m */,
+			);
+			name = "DLRadio Button";
+			sourceTree = "<group>";
+		};
+		14557D392105F21B0056859F /* PSProfileStepper */ = {
+			isa = PBXGroup;
+			children = (
+				14557D3D2105F2350056859F /* PSProfileStepper.h */,
+				14557D3E2105F2350056859F /* PSProfileStepper.m */,
+			);
+			name = PSProfileStepper;
+			sourceTree = "<group>";
+		};
+		14557D402105F23B0056859F /* ACFloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				14557D412105F25F0056859F /* ACFloatingTextField.h */,
+				14557D422105F25F0056859F /* ACFloatingTextField.m */,
+			);
+			name = ACFloatingTextField;
+			sourceTree = "<group>";
+		};
+		14557D472105F2B30056859F /* App Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14557D482105F2C30056859F /* Blackletter Buffoonery.otf */,
+				14557D492105F2C30056859F /* blackpool_gothic_nbp.ttf */,
+			);
+			name = "App Fonts";
+			sourceTree = "<group>";
+		};
+		14557D4A2105F2DE0056859F /* KDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				14557D4B2105F2F30056859F /* KPDropMenu.h */,
+				14557D4C2105F2F30056859F /* KPDropMenu.m */,
+			);
+			name = KDropDownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +406,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14557CD02105F0AB0056859F /* LaunchScreen.storyboard in Resources */,
-				14557CCD2105F0AB0056859F /* Assets.xcassets in Resources */,
-				14557CCB2105F0AB0056859F /* Main.storyboard in Resources */,
+				14557D0E2105F1360056859F /* Info.plist in Resources */,
+				14557D2E2105F1F10056859F /* View.xib in Resources */,
+				14557D342105F1F10056859F /* View5.xib in Resources */,
+				14557D452105F28D0056859F /* uiStrings.strings in Resources */,
+				14557D372105F1F10056859F /* employeeViewXIB.xib in Resources */,
+				14557D322105F1F10056859F /* View4.xib in Resources */,
+				14557D0D2105F1360056859F /* LaunchScreen.storyboard in Resources */,
+				14557D0C2105F1360056859F /* Assets.xcassets in Resources */,
+				14557D0B2105F1360056859F /* Main.storyboard in Resources */,
+				14557D302105F1F10056859F /* View2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +440,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14557CC82105F0AB0056859F /* ViewController.m in Sources */,
-				14557CC52105F0AB0056859F /* AppDelegate.m in Sources */,
+				14557D312105F1F10056859F /* customView2.m in Sources */,
+				14557D0A2105F1360056859F /* ViewController.m in Sources */,
+				14557D092105F1360056859F /* AppDelegate.m in Sources */,
+				14557D142105F16D0056859F /* welcomePageViewController.m in Sources */,
+				14557D3F2105F2350056859F /* PSProfileStepper.m in Sources */,
+				14557D352105F1F10056859F /* customView5.m in Sources */,
+				14557D332105F1F10056859F /* customView4.m in Sources */,
 				14557CC22105F0AB0056859F /* main.m in Sources */,
+				14557D192105F1A70056859F /* SignInViewController.m in Sources */,
+				14557D362105F1F10056859F /* employeeView.m in Sources */,
+				14557D3C2105F22C0056859F /* DLRadioButton.m in Sources */,
+				14557D2F2105F1F10056859F /* customView.m in Sources */,
+				14557D4D2105F2F30056859F /* KPDropMenu.m in Sources */,
+				14557D1D2105F1BB0056859F /* SignUpViewController.m in Sources */,
+				14557D432105F25F0056859F /* ACFloatingTextField.m in Sources */,
+				14557D152105F16D0056859F /* contentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,25 +489,6 @@
 			targetProxy = 14557CE22105F0AC0056859F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		14557CC92105F0AB0056859F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14557CCA2105F0AB0056859F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14557CCF2105F0AB0056859F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		14557CE82105F0AC0056859F /* Debug */ = {

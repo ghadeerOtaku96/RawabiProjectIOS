@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="customView">
+            <connections>
+                <outlet property="emailTextField" destination="Gtf-f4-ueL" id="8PD-tU-5Sb"/>
+                <outlet property="firstNameTextField" destination="b68-0T-QRI" id="WIZ-uG-zHe"/>
+                <outlet property="lastNameTextField" destination="iHN-Ei-BUx" id="xuV-1E-utv"/>
+                <outlet property="phoneTextField" destination="1CK-pE-lhh" id="GNs-lh-kx1"/>
+                <outlet property="profileImageView" destination="Y1h-YR-Rtc" id="3d2-0a-sP5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="VFr-Av-xjv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-cE-UrG">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1h-YR-Rtc"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b68-0T-QRI" customClass="ACFloatingTextField">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="gtq-ba-SF2"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-f4-ueL" customClass="ACFloatingTextField">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="eEq-hb-PvY"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-pE-lhh" customClass="ACFloatingTextField">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="rqr-vk-asB"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-Ei-BUx" customClass="ACFloatingTextField">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1eU-A9-mI1"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Y1h-YR-Rtc" firstAttribute="width" secondItem="6Mw-cE-UrG" secondAttribute="width" multiplier="4:10" id="1va-uk-PlM"/>
+                        <constraint firstItem="Y1h-YR-Rtc" firstAttribute="top" secondItem="6Mw-cE-UrG" secondAttribute="top" constant="87" id="2F4-d7-RzE"/>
+                        <constraint firstItem="iHN-Ei-BUx" firstAttribute="leading" secondItem="6Mw-cE-UrG" secondAttribute="leading" constant="37" id="2df-Cl-zzN"/>
+                        <constraint firstAttribute="trailing" secondItem="iHN-Ei-BUx" secondAttribute="trailing" constant="40" id="3jl-js-i4R"/>
+                        <constraint firstAttribute="trailing" secondItem="b68-0T-QRI" secondAttribute="trailing" constant="38" id="5gf-to-peO"/>
+                        <constraint firstItem="1CK-pE-lhh" firstAttribute="leading" secondItem="6Mw-cE-UrG" secondAttribute="leading" constant="37" id="9Ah-Aj-zoJ"/>
+                        <constraint firstItem="Gtf-f4-ueL" firstAttribute="leading" secondItem="6Mw-cE-UrG" secondAttribute="leading" constant="39" id="EeT-SY-9D3"/>
+                        <constraint firstItem="b68-0T-QRI" firstAttribute="leading" secondItem="6Mw-cE-UrG" secondAttribute="leading" constant="38" id="Hpd-jP-bIl"/>
+                        <constraint firstItem="Y1h-YR-Rtc" firstAttribute="centerX" secondItem="6Mw-cE-UrG" secondAttribute="centerX" id="IIC-0n-Yfx"/>
+                        <constraint firstItem="Y1h-YR-Rtc" firstAttribute="height" secondItem="6Mw-cE-UrG" secondAttribute="width" multiplier="4:10" id="MLM-Dd-KfN"/>
+                        <constraint firstItem="iHN-Ei-BUx" firstAttribute="top" secondItem="b68-0T-QRI" secondAttribute="bottom" constant="26" id="PCE-06-uU1"/>
+                        <constraint firstAttribute="trailing" secondItem="Gtf-f4-ueL" secondAttribute="trailing" constant="38" id="T2U-Es-SHc"/>
+                        <constraint firstItem="1CK-pE-lhh" firstAttribute="top" secondItem="Gtf-f4-ueL" secondAttribute="bottom" constant="26" id="VJZ-pA-2gr"/>
+                        <constraint firstAttribute="trailing" secondItem="1CK-pE-lhh" secondAttribute="trailing" constant="39" id="aZ4-xF-SGU"/>
+                        <constraint firstItem="Gtf-f4-ueL" firstAttribute="top" secondItem="iHN-Ei-BUx" secondAttribute="bottom" constant="24" id="hmN-RE-hDh"/>
+                        <constraint firstItem="Y1h-YR-Rtc" firstAttribute="centerX" secondItem="b68-0T-QRI" secondAttribute="centerX" id="lFd-EQ-Pds"/>
+                        <constraint firstAttribute="bottom" secondItem="1CK-pE-lhh" secondAttribute="bottom" constant="82" id="pTh-rY-oAd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="customView1"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Mw-cE-UrG" secondAttribute="trailing" id="6H5-nz-Tcw"/>
+                <constraint firstAttribute="bottom" secondItem="6Mw-cE-UrG" secondAttribute="bottom" id="8e0-6K-r1T"/>
+                <constraint firstItem="6Mw-cE-UrG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oQA-zN-1BK"/>
+                <constraint firstItem="6Mw-cE-UrG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zjL-2B-wDc"/>
+            </constraints>
+            <point key="canvasLocation" x="40.5" y="62.5"/>
+        </view>
+    </objects>
+</document>

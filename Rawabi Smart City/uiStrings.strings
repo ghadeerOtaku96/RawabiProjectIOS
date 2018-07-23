@@ -1,0 +1,24 @@
+/* 
+  uiStrings.strings
+  Rawabi Smart City
+
+  Created by Ghadeer Abualrub on 7/23/18.
+  Copyright © 2018 asal. All rights reserved.
+*/
+
+// STRINGS FOR WELCOME PAGE
+"Signin Btn" = "SIGN IN";
+"Signup Btn" =  "SIGN UP";
+"lbl" = "DON'T HAVE AN ACCOUNT?";
+
+// STRINGS FOR SIGN IN PAGE
+"Forget Btn" = "FORGET PASSWORD ?";
+"Login Btn" = "LOG IN ";
+"EmailIcon Name"="email-2x";
+"PasswordIcon Name"="password-2x";
+"Logo Name"="rawabi-logo";
+
+
+//STRINGS FOR SIGN UP PAGE
+"Next Btn"="NEXT";
+

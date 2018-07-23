@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Rawabi Smart City
+//  Rawabi
 //
-//  Created by Ghadeer Abualrub on 7/23/18.
+//  Created by Ghadeer Abualrub on 7/12/18.
 //  Copyright © 2018 asal. All rights reserved.
 //
 
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+  
     return YES;
 }
 
