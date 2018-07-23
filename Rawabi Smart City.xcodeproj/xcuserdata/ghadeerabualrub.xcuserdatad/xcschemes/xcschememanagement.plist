@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Rawabi Smart City.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>14557CBC2105F0AB0056859F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14557CD52105F0AC0056859F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14557CE02105F0AC0056859F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

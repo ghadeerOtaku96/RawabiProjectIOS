@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14557CC22105F0AB0056859F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC12105F0AB0056859F /* main.m */; };
+		14557CC52105F0AB0056859F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC42105F0AB0056859F /* AppDelegate.m */; };
+		14557CC82105F0AB0056859F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC72105F0AB0056859F /* ViewController.m */; };
+		14557CCB2105F0AB0056859F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557CC92105F0AB0056859F /* Main.storyboard */; };
+		14557CCD2105F0AB0056859F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14557CCC2105F0AB0056859F /* Assets.xcassets */; };
+		14557CD02105F0AB0056859F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */; };
+		14557CDB2105F0AC0056859F /* Rawabi_Smart_CityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */; };
+		14557CE62105F0AC0056859F /* Rawabi_Smart_CityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14557CD72105F0AC0056859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14557CB52105F0AB0056859F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14557CBC2105F0AB0056859F;
+			remoteInfo = "Rawabi Smart City";
+		};
+		14557CE22105F0AC0056859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14557CB52105F0AB0056859F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14557CBC2105F0AB0056859F;
+			remoteInfo = "Rawabi Smart City";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14557CBD2105F0AB0056859F /* Rawabi Smart City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rawabi Smart City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14557CC12105F0AB0056859F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14557CC32105F0AB0056859F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14557CC42105F0AB0056859F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14557CC62105F0AB0056859F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14557CC72105F0AB0056859F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14557CCA2105F0AB0056859F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14557CCC2105F0AB0056859F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14557CCF2105F0AB0056859F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14557CD12105F0AB0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14557CD62105F0AC0056859F /* Rawabi Smart CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rawabi Smart CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rawabi_Smart_CityTests.m; sourceTree = "<group>"; };
+		14557CDC2105F0AC0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14557CE12105F0AC0056859F /* Rawabi Smart CityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rawabi Smart CityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rawabi_Smart_CityUITests.m; sourceTree = "<group>"; };
+		14557CE72105F0AC0056859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14557CBA2105F0AB0056859F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CD32105F0AC0056859F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CDE2105F0AC0056859F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14557CB42105F0AB0056859F = {
+			isa = PBXGroup;
+			children = (
+				14557CBF2105F0AB0056859F /* Rawabi Smart City */,
+				14557CD92105F0AC0056859F /* Rawabi Smart CityTests */,
+				14557CE42105F0AC0056859F /* Rawabi Smart CityUITests */,
+				14557CBE2105F0AB0056859F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14557CBE2105F0AB0056859F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14557CBD2105F0AB0056859F /* Rawabi Smart City.app */,
+				14557CD62105F0AC0056859F /* Rawabi Smart CityTests.xctest */,
+				14557CE12105F0AC0056859F /* Rawabi Smart CityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14557CBF2105F0AB0056859F /* Rawabi Smart City */ = {
+			isa = PBXGroup;
+			children = (
+				14557CC32105F0AB0056859F /* AppDelegate.h */,
+				14557CC42105F0AB0056859F /* AppDelegate.m */,
+				14557CC62105F0AB0056859F /* ViewController.h */,
+				14557CC72105F0AB0056859F /* ViewController.m */,
+				14557CC92105F0AB0056859F /* Main.storyboard */,
+				14557CCC2105F0AB0056859F /* Assets.xcassets */,
+				14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */,
+				14557CD12105F0AB0056859F /* Info.plist */,
+				14557CC02105F0AB0056859F /* Supporting Files */,
+			);
+			path = "Rawabi Smart City";
+			sourceTree = "<group>";
+		};
+		14557CC02105F0AB0056859F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14557CC12105F0AB0056859F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14557CD92105F0AC0056859F /* Rawabi Smart CityTests */ = {
+			isa = PBXGroup;
+			children = (
+				14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */,
+				14557CDC2105F0AC0056859F /* Info.plist */,
+			);
+			path = "Rawabi Smart CityTests";
+			sourceTree = "<group>";
+		};
+		14557CE42105F0AC0056859F /* Rawabi Smart CityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */,
+				14557CE72105F0AC0056859F /* Info.plist */,
+			);
+			path = "Rawabi Smart CityUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14557CBC2105F0AB0056859F /* Rawabi Smart City */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14557CEA2105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart City" */;
+			buildPhases = (
+				14557CB92105F0AB0056859F /* Sources */,
+				14557CBA2105F0AB0056859F /* Frameworks */,
+				14557CBB2105F0AB0056859F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rawabi Smart City";
+			productName = "Rawabi Smart City";
+			productReference = 14557CBD2105F0AB0056859F /* Rawabi Smart City.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14557CD52105F0AC0056859F /* Rawabi Smart CityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14557CED2105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityTests" */;
+			buildPhases = (
+				14557CD22105F0AC0056859F /* Sources */,
+				14557CD32105F0AC0056859F /* Frameworks */,
+				14557CD42105F0AC0056859F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14557CD82105F0AC0056859F /* PBXTargetDependency */,
+			);
+			name = "Rawabi Smart CityTests";
+			productName = "Rawabi Smart CityTests";
+			productReference = 14557CD62105F0AC0056859F /* Rawabi Smart CityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14557CE02105F0AC0056859F /* Rawabi Smart CityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14557CF02105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityUITests" */;
+			buildPhases = (
+				14557CDD2105F0AC0056859F /* Sources */,
+				14557CDE2105F0AC0056859F /* Frameworks */,
+				14557CDF2105F0AC0056859F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14557CE32105F0AC0056859F /* PBXTargetDependency */,
+			);
+			name = "Rawabi Smart CityUITests";
+			productName = "Rawabi Smart CityUITests";
+			productReference = 14557CE12105F0AC0056859F /* Rawabi Smart CityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14557CB52105F0AB0056859F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = asal;
+				TargetAttributes = {
+					14557CBC2105F0AB0056859F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					14557CD52105F0AC0056859F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14557CBC2105F0AB0056859F;
+					};
+					14557CE02105F0AC0056859F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14557CBC2105F0AB0056859F;
+					};
+				};
+			};
+			buildConfigurationList = 14557CB82105F0AB0056859F /* Build configuration list for PBXProject "Rawabi Smart City" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14557CB42105F0AB0056859F;
+			productRefGroup = 14557CBE2105F0AB0056859F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14557CBC2105F0AB0056859F /* Rawabi Smart City */,
+				14557CD52105F0AC0056859F /* Rawabi Smart CityTests */,
+				14557CE02105F0AC0056859F /* Rawabi Smart CityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14557CBB2105F0AB0056859F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14557CD02105F0AB0056859F /* LaunchScreen.storyboard in Resources */,
+				14557CCD2105F0AB0056859F /* Assets.xcassets in Resources */,
+				14557CCB2105F0AB0056859F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CD42105F0AC0056859F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CDF2105F0AC0056859F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14557CB92105F0AB0056859F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14557CC82105F0AB0056859F /* ViewController.m in Sources */,
+				14557CC52105F0AB0056859F /* AppDelegate.m in Sources */,
+				14557CC22105F0AB0056859F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CD22105F0AC0056859F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14557CDB2105F0AC0056859F /* Rawabi_Smart_CityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14557CDD2105F0AC0056859F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14557CE62105F0AC0056859F /* Rawabi_Smart_CityUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14557CD82105F0AC0056859F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14557CBC2105F0AB0056859F /* Rawabi Smart City */;
+			targetProxy = 14557CD72105F0AC0056859F /* PBXContainerItemProxy */;
+		};
+		14557CE32105F0AC0056859F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14557CBC2105F0AB0056859F /* Rawabi Smart City */;
+			targetProxy = 14557CE22105F0AC0056859F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14557CC92105F0AB0056859F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14557CCA2105F0AB0056859F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14557CCE2105F0AB0056859F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14557CCF2105F0AB0056859F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14557CE82105F0AC0056859F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14557CE92105F0AC0056859F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14557CEB2105F0AC0056859F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rawabi Smart City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14557CEC2105F0AC0056859F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rawabi Smart City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14557CEE2105F0AC0056859F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rawabi Smart CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rawabi Smart City.app/Rawabi Smart City";
+			};
+			name = Debug;
+		};
+		14557CEF2105F0AC0056859F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rawabi Smart CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rawabi Smart City.app/Rawabi Smart City";
+			};
+			name = Release;
+		};
+		14557CF12105F0AC0056859F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Rawabi Smart CityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-CityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rawabi Smart City";
+			};
+			name = Debug;
+		};
+		14557CF22105F0AC0056859F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Rawabi Smart CityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-CityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rawabi Smart City";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14557CB82105F0AB0056859F /* Build configuration list for PBXProject "Rawabi Smart City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14557CE82105F0AC0056859F /* Debug */,
+				14557CE92105F0AC0056859F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14557CEA2105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14557CEB2105F0AC0056859F /* Debug */,
+				14557CEC2105F0AC0056859F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14557CED2105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14557CEE2105F0AC0056859F /* Debug */,
+				14557CEF2105F0AC0056859F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14557CF02105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14557CF12105F0AC0056859F /* Debug */,
+				14557CF22105F0AC0056859F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14557CB52105F0AB0056859F /* Project object */;
+}
