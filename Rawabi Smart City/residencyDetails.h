@@ -29,4 +29,10 @@
 @property (strong, nonatomic) NSArray* floorArray;
 @property (strong, nonatomic) NSArray* apartmentNumberArray;
 
+@property (strong, nonatomic) NSString* residencyType;
+@property (strong, nonatomic) NSString* neighborhood;
+@property (strong, nonatomic) NSString* buildingNumber;
+@property (strong, nonatomic) NSString* floor;
+@property (strong, nonatomic) NSString* apartmentNumber;
+
 @end

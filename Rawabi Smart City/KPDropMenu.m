@@ -53,6 +53,7 @@
     _itemFontSize = 14.0;
     _itemsFont = [UIFont systemFontOfSize:14.0];
     _DirectionDown = YES;
+    tblView.allowsSelection = YES;
     
 }
 
@@ -124,7 +125,7 @@
 
     
     if(label == nil){
-        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0.9*self.frame.size.width, self.frame.size.height)];
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0.9 * self.frame.size.width, self.frame.size.height)];
         label.textColor = _titleColor;
         label.text = _title;
         label.textAlignment = _titleTextAlignment;

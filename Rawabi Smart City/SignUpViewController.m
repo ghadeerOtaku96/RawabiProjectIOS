@@ -13,6 +13,7 @@
     int index;
     CGRect frameView;
     CGSize keySize;
+    BOOL status;
 }
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
@@ -86,6 +87,7 @@
     [self.nextButton setTitle:NSLocalizedStringFromTable(@"Next Btn", @"uiStrings", nil) forState:UIControlStateNormal];
         self.nextButton.layer.cornerRadius = 10;
         self.nextButton.clipsToBounds = YES;
+           self.nextButton.enabled = NO;
     });
    
   
@@ -126,7 +128,8 @@
     visibleRect.size.height = buttonHeight;
     CGPoint scrollPoint = CGPointMake(0.0,  2*visibleRect.size.height );
     [self.scrollView setContentOffset:scrollPoint animated:YES];
-    
+        self.nextButton.enabled = YES;
+
         
  
 
@@ -137,16 +140,48 @@
     textField.rightViewMode = UITextFieldViewModeNever;
     
     if([textField.text  isEqualToString:@""]){
-        textField.lineColor = [UIColor redColor];
-        textField.errorText = @"Empty input";
         UIImageView* errorIcon = [[UIImageView alloc]initWithFrame:CGRectMake(textField.frame.size.width-25, 2, 25, 25)];
+        textField.errorLineColor = [UIColor redColor];
+        [textField showError];
+        
         errorIcon.image = [UIImage imageNamed:@"error"];
         [textField setRightView:errorIcon];
         textField.rightViewMode = UITextFieldViewModeAlways;
-//        [textField showError];
-//        [textField shakeView:textField];
+        [textField shakeView:textField];
+        
+        self.nextButton.enabled = NO;
         
     }
+    
+    if(textField == self.firstView.emailTextField){
+        if(![self NSStringIsValidEmail:textField.text]){
+            UIImageView* errorIcon = [[UIImageView alloc]initWithFrame:CGRectMake(textField.frame.size.width-25, 2, 25, 25)];
+            textField.errorLineColor = [UIColor redColor];
+            [textField showError];
+            
+            errorIcon.image = [UIImage imageNamed:@"error"];
+            [textField setRightView:errorIcon];
+            textField.rightViewMode = UITextFieldViewModeAlways;
+            [textField shakeView:textField];
+            
+            self.nextButton.enabled = NO;
+        }
+    }
+    if(textField == self.firstView.phoneTextField){
+        if(![self NSStringIsValidPhone:textField.text]){
+            UIImageView* errorIcon = [[UIImageView alloc]initWithFrame:CGRectMake(textField.frame.size.width-25, 2, 25, 25)];
+            textField.errorLineColor = [UIColor redColor];
+            [textField showError];
+            
+            errorIcon.image = [UIImage imageNamed:@"error"];
+            [textField setRightView:errorIcon];
+            textField.rightViewMode = UITextFieldViewModeAlways;
+            [textField shakeView:textField];
+            
+            self.nextButton.enabled = NO;
+        }
+    }
+    
 }
 // any touch outside the text fields will be ignored and disable the keyboard
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -192,22 +227,25 @@
 #pragma mark - Event Handling
 - (IBAction)next:(UIButton *)sender {
     
+    status = ([self.firstView.firstNameTextField.text isEqualToString:@""] ||
+    [self.firstView.lastNameTextField.text isEqualToString:@""] ||
+    [self.firstView.emailTextField.text isEqualToString:@""] ||
+    [self.firstView.phoneTextField.text isEqualToString:@""]) ;
+    
+    if(index >= 99 || status){
+        sender.enabled = NO;
+        
+        // go to next step
+    }
+    else{
     [self.backButton setEnabled:YES];
     index = index + 50;
     [self.stepperView setIndex:index animated:YES];
  
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x +1+ self.scrollView.frame.size.width/3, 0) animated:YES];
     NSLog(@"index %d",index);
-   
-    
-    if(index>=99){
-        sender.enabled = NO;
-    
-        // go to next step
     }
-    
-    
-    
+ 
 
 }
 

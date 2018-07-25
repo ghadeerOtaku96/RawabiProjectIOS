@@ -60,14 +60,14 @@
         
         self.status = 1;
         self.companyDropDownMenu.hidden = NO;
-        if(![self.companyDropDownMenu.title isEqualToString:@"Company"])
-            self.departmentDropDownMenu.hidden = NO;
         NSLog(@"%ld",self.status);
     }
     else{
         
         self.status = 0;
         NSLog(@"%ld",self.status);
+        self.companyDropDownMenu.hidden = YES;
+        self.departmentDropDownMenu.hidden = YES;
     }
 }
 
@@ -84,6 +84,8 @@
 }
 
 -(void)didHide:(KPDropMenu *)dropMenu{
+    if(![self.companyDropDownMenu.title isEqualToString:@"Company"])
+        self.departmentDropDownMenu.hidden = NO;
     NSLog(@"didHide");
 }
 

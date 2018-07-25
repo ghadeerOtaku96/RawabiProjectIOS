@@ -67,12 +67,18 @@
     if([sender.currentTitle isEqual:@"YES"]){
         
         self.status = 1;
+        self.residencyTypeMenu.hidden = NO;
         NSLog(@"%ld",self.status);
     }
     else{
         
         self.status = 0;
         NSLog(@"%ld",self.status);
+        self.residencyTypeMenu.hidden = YES;
+        self.neighborhoodMenu.hidden = YES;
+        self.buildingNumberMenu.hidden = YES;
+        self.floorMenu.hidden = YES;
+        self.apartmentNumberMenu.hidden = YES;
     }
 }
 
@@ -88,6 +94,22 @@
 }
 
 -(void)didHide:(KPDropMenu *)dropMenu{
+    
+    if(dropMenu == self.residencyTypeMenu && ![self.residencyTypeMenu.title isEqualToString:@"Residency Type"]){
+        self.neighborhoodMenu.hidden = NO;
+    }
+    else if(dropMenu == self.neighborhoodMenu && ![self.neighborhoodMenu.title isEqualToString:@"Neighborhood"]){
+        self.buildingNumberMenu.hidden = NO;
+    }
+    else if(dropMenu == self.buildingNumberMenu && ![self.buildingNumberMenu.title isEqualToString:@"Building Number"]){
+        self.floorMenu.hidden = NO;
+    }
+    else if(dropMenu == self.floorMenu && ![self.floorMenu.title isEqualToString:@"Floor"]){
+        self.apartmentNumberMenu.hidden = NO;
+    }
+    else {
+        NSLog(@"didHide");
+    }
     NSLog(@"didHide");
 }
 /*

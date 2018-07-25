@@ -31,6 +31,17 @@
     [[NSBundle mainBundle]loadNibNamed:@"personalDetailsView" owner:self options:nil];
     self.bounds = self.view.bounds;
 
+//    self.firstNameTextField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"user"]];
+//    self.firstNameTextField.leftViewMode = UITextFieldViewModeAlways;
+//    
+//    self.lastNameTextField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"user"]];
+//    self.lastNameTextField.leftViewMode = UITextFieldViewModeAlways;
+//    
+//    self.emailTextField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"email-2x"]];
+//    self.emailTextField.leftViewMode = UITextFieldViewModeAlways;
+//    
+//    self.phoneTextField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"phone"]];
+//    self.phoneTextField.leftViewMode = UITextFieldViewModeAlways;
     
     
     [self addSubview:self.view];
