@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="employeeDetails">
             <connections>
-                <outlet property="companyDropDownMenu" destination="bxp-Pb-lsj" id="Dhz-ph-5KK"/>
+                <outlet property="companyDropDownMenu" destination="bxp-Pb-lsj" id="Jdy-9T-Tya"/>
                 <outlet property="departmentDropDownMenu" destination="BSH-7D-Shi" id="5hY-il-oFf"/>
                 <outlet property="noButton" destination="y8c-t0-9u0" id="DXi-a8-BsP"/>
                 <outlet property="questionLabel" destination="I7H-MJ-BmN" id="q0t-bK-Kpd"/>

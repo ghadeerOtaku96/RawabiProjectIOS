@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ACFloatingTextField.h"
-
+#import "SignUpViewController.h"
 
 @interface SignInViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;

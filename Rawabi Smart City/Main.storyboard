@@ -38,6 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="nTP-5j-D8a" eventType="touchUpInside" id="6BZ-34-Wyv"/>
+                                    <segue destination="5Gq-rZ-dQZ" kind="show" id="zZc-cR-ZpH"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOQ-2w-GN2">
@@ -200,6 +201,7 @@
                                         <connections>
                                             <action selector="forgetPassword:" destination="4jM-02-xHa" eventType="touchUpInside" id="qCm-mY-2Ez"/>
                                             <action selector="showSignUpPage:" destination="4jM-02-xHa" eventType="touchUpInside" id="hNH-el-MjY"/>
+                                            <segue destination="5Gq-rZ-dQZ" kind="show" id="1Se-L4-rLC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -431,6 +433,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Gq-rZ-dQZ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="T6m-fi-Yaj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NT3-UZ-FqO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -451,4 +454,7 @@
         <image name="back_Button" width="50" height="50"/>
         <image name="rawabi-logo" width="110" height="164"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Se-L4-rLC"/>
+    </inferredMetricsTieBreakers>
 </document>

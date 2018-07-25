@@ -53,7 +53,7 @@
     _itemFontSize = 14.0;
     _itemsFont = [UIFont systemFontOfSize:14.0];
     _DirectionDown = YES;
-    tblView.allowsSelection = YES;
+
     
 }
 
@@ -145,6 +145,7 @@
     tblView.delegate = self;
     tblView.dataSource = self;
     tblView.backgroundColor = _itemBackground;
+    
 }
 
 -(void)didTap : (UIGestureRecognizer *)gesture {

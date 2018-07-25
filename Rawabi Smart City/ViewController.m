@@ -41,9 +41,6 @@
 }
 
 - (IBAction)signUp:(UIButton *)sender {
-
-    SignUpViewController* nextVC = (SignUpViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
-    [self presentViewController:nextVC animated:YES completion:nil];
 }
 
 @end

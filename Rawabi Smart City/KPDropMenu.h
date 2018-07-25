@@ -21,7 +21,7 @@
 
 IB_DESIGNABLE
 
-@interface KPDropMenu : UIView
+@interface KPDropMenu : UIView <UITableViewDelegate , UITableViewDataSource>
 
 @property (nonatomic, retain) id <KPDropMenuDelegate> delegate;
 
