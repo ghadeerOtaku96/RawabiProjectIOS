@@ -1,15 +1,14 @@
 //
-//  customView2.m
-//  Rawabi
+//  personalDetails.m
+//  Rawabi Smart City
 //
-//  Created by Ghadeer Abualrub on 7/19/18.
+//  Created by Ghadeer Abualrub on 7/24/18.
 //  Copyright © 2018 asal. All rights reserved.
 //
 
-#import "customView2.h"
+#import "personalDetails.h"
 
-
-@implementation customView2
+@implementation personalDetails
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -29,25 +28,17 @@
 }
 
 -(void)customInit{
-    [[NSBundle mainBundle]loadNibNamed:@"View2" owner:self options:nil];
+    [[NSBundle mainBundle]loadNibNamed:@"personalDetailsView" owner:self options:nil];
     self.bounds = self.view.bounds;
-    self.status = 99;
+
+    
+    
     [self addSubview:self.view];
+
+    
     
 }
 
-- (IBAction)select:(DLRadioButton *)sender {
-    if([sender.currentTitle isEqual:@"YES"]){
-        self.result.text = @"yes";
-        self.status = 1;
-        NSLog(@"%ld",self.status);
-    }
-    else{
-        self.result.text = @"no";
-        self.status = 0;
-        NSLog(@"%ld",self.status);
-    }
-}
 
 
 /*
@@ -57,5 +48,8 @@
     // Drawing code
 }
 */
-
+/*
+ 
+ 
+ */
 @end

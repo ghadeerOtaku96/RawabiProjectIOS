@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mXx-6w-JLS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Gq-rZ-dQZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -137,7 +137,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="1Lb-QF-HAb"/>
                                             <constraint firstAttribute="height" constant="30" id="yDR-R8-Fct"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="17"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -187,6 +187,21 @@
                                             <action selector="login:" destination="4jM-02-xHa" eventType="touchUpInside" id="nzi-dg-ZfI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2B-aW-W97">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5jL-O6-A6c"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="5v0-kZ-7b6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="17"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgetPassword:" destination="4jM-02-xHa" eventType="touchUpInside" id="qCm-mY-2Ez"/>
+                                            <action selector="showSignUpPage:" destination="4jM-02-xHa" eventType="touchUpInside" id="hNH-el-MjY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -196,13 +211,15 @@
                                     <constraint firstItem="LCk-iC-5Rg" firstAttribute="width" secondItem="Sq5-qw-AnI" secondAttribute="width" multiplier="55:100" constant="-37.5" id="5bb-Bd-2mx"/>
                                     <constraint firstItem="RgF-ws-JGe" firstAttribute="centerX" secondItem="Sq5-qw-AnI" secondAttribute="centerX" id="6BH-tE-l2d"/>
                                     <constraint firstAttribute="trailing" secondItem="gGo-qM-ejL" secondAttribute="trailing" constant="40" id="9t9-CW-nwA"/>
-                                    <constraint firstItem="LCk-iC-5Rg" firstAttribute="top" secondItem="Sq5-qw-AnI" secondAttribute="top" constant="97" id="CGP-UL-Ree"/>
+                                    <constraint firstItem="LCk-iC-5Rg" firstAttribute="top" secondItem="Sq5-qw-AnI" secondAttribute="top" constant="80" id="CGP-UL-Ree"/>
                                     <constraint firstItem="gGo-qM-ejL" firstAttribute="top" secondItem="XZv-oL-ypz" secondAttribute="bottom" constant="53" id="CT5-xf-zcx"/>
-                                    <constraint firstItem="RgF-ws-JGe" firstAttribute="top" secondItem="LCk-iC-5Rg" secondAttribute="bottom" constant="70" id="Kjh-Xt-ojW"/>
+                                    <constraint firstItem="n2B-aW-W97" firstAttribute="top" secondItem="gGo-qM-ejL" secondAttribute="bottom" constant="2.5" id="Dov-55-hVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="n2B-aW-W97" secondAttribute="trailing" constant="41" id="HZo-0y-D7i"/>
+                                    <constraint firstItem="RgF-ws-JGe" firstAttribute="top" secondItem="LCk-iC-5Rg" secondAttribute="bottom" constant="60" id="Kjh-Xt-ojW"/>
                                     <constraint firstItem="LCk-iC-5Rg" firstAttribute="centerX" secondItem="Sq5-qw-AnI" secondAttribute="centerX" id="RiD-U0-oPR"/>
                                     <constraint firstAttribute="trailing" secondItem="XZv-oL-ypz" secondAttribute="trailing" constant="37" id="U10-5X-ma8"/>
                                     <constraint firstAttribute="bottom" secondItem="LCk-iC-5Rg" secondAttribute="bottom" constant="420" id="XeL-bg-pdK"/>
-                                    <constraint firstItem="LCk-iC-5Rg" firstAttribute="height" secondItem="Sq5-qw-AnI" secondAttribute="width" multiplier="55:100" constant="-37.5" id="YJK-FX-efx"/>
+                                    <constraint firstItem="LCk-iC-5Rg" firstAttribute="height" secondItem="Sq5-qw-AnI" secondAttribute="width" multiplier="65:100" constant="-37.5" id="YJK-FX-efx"/>
                                     <constraint firstItem="gGo-qM-ejL" firstAttribute="centerX" secondItem="Sq5-qw-AnI" secondAttribute="centerX" id="dAW-Je-owg"/>
                                     <constraint firstItem="XZv-oL-ypz" firstAttribute="top" secondItem="RgF-ws-JGe" secondAttribute="bottom" constant="20" id="fBG-CR-6hf"/>
                                     <constraint firstAttribute="trailing" secondItem="RgF-ws-JGe" secondAttribute="trailing" constant="35" id="izo-PV-aZs"/>
@@ -234,6 +251,7 @@
                         <outlet property="loginButton" destination="gGo-qM-ejL" id="UjG-lo-isR"/>
                         <outlet property="passwordTextField" destination="XZv-oL-ypz" id="GMg-Hd-62v"/>
                         <outlet property="scrollView" destination="Sq5-qw-AnI" id="hIH-1N-mVh"/>
+                        <outlet property="signUpButton" destination="n2B-aW-W97" id="Yv6-WL-nKo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0q-KK-Kfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,7 +302,7 @@
             </objects>
             <point key="canvasLocation" x="601" y="9"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up-->
         <scene sceneID="bDb-tU-R6e">
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" id="mXx-6w-JLS" customClass="SignUpViewController" sceneMemberID="viewController">
@@ -296,9 +314,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruw-Vr-yke">
+                                <color key="backgroundColor" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="9l0-K3-jLT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="20"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="mXx-6w-JLS" eventType="touchUpInside" id="4yF-XX-rBs"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVw-cc-3kl">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zdu-Hh-uTc" appends="YES" id="Bim-2L-mcd"/>
+                                </connections>
+                            </scrollView>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSE-gA-0hx" customClass="PSProfileStepper">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6qi-pb-P2p"/>
                                 </constraints>
@@ -328,7 +366,7 @@
                                         <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="circleCount">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="8"/>
@@ -343,52 +381,73 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruw-Vr-yke">
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="MHB-1t-SN3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="20"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="mXx-6w-JLS" eventType="touchUpInside" id="4yF-XX-rBs"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVw-cc-3kl">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MSE-gA-0hx" firstAttribute="top" secondItem="ZbF-cu-nOX" secondAttribute="bottom" constant="15" id="1ps-dh-7Ni"/>
+                            <constraint firstItem="MSE-gA-0hx" firstAttribute="leading" secondItem="lx5-e1-sSL" secondAttribute="leadingMargin" constant="12" id="2Mk-Jp-gjc"/>
+                            <constraint firstItem="MVw-cc-3kl" firstAttribute="top" secondItem="MSE-gA-0hx" secondAttribute="bottom" constant="9" id="2PF-JX-dCk"/>
                             <constraint firstItem="MSE-gA-0hx" firstAttribute="centerX" secondItem="lx5-e1-sSL" secondAttribute="centerX" id="7a7-h4-XFf"/>
-                            <constraint firstItem="H3N-x2-ERj" firstAttribute="top" secondItem="Ruw-Vr-yke" secondAttribute="bottom" constant="27" id="8jL-Lh-mCX"/>
-                            <constraint firstItem="MVw-cc-3kl" firstAttribute="width" secondItem="lx5-e1-sSL" secondAttribute="width" multiplier="5" id="B01-nX-rIW"/>
-                            <constraint firstItem="Ruw-Vr-yke" firstAttribute="top" secondItem="MVw-cc-3kl" secondAttribute="bottom" constant="25" id="DLP-py-kSD"/>
-                            <constraint firstItem="MSE-gA-0hx" firstAttribute="top" secondItem="ZbF-cu-nOX" secondAttribute="bottom" constant="8" symbolic="YES" id="S5i-ip-Blt"/>
-                            <constraint firstItem="MVw-cc-3kl" firstAttribute="top" secondItem="MSE-gA-0hx" secondAttribute="bottom" constant="8" symbolic="YES" id="UXR-g2-7eZ"/>
-                            <constraint firstItem="MSE-gA-0hx" firstAttribute="width" secondItem="lx5-e1-sSL" secondAttribute="width" multiplier="98:100" id="VfC-VR-KYy"/>
+                            <constraint firstItem="MVw-cc-3kl" firstAttribute="width" secondItem="lx5-e1-sSL" secondAttribute="width" multiplier="3" id="B01-nX-rIW"/>
+                            <constraint firstItem="Ruw-Vr-yke" firstAttribute="top" secondItem="MVw-cc-3kl" secondAttribute="bottom" constant="11" id="M2m-2m-eE3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MSE-gA-0hx" secondAttribute="trailing" constant="12" id="ZEB-8O-2Wu"/>
+                            <constraint firstItem="H3N-x2-ERj" firstAttribute="top" secondItem="Ruw-Vr-yke" secondAttribute="bottom" constant="36" id="cjq-Ae-reU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ruw-Vr-yke" secondAttribute="trailing" constant="28" id="oKo-Dj-O3e"/>
+                            <constraint firstItem="Ruw-Vr-yke" firstAttribute="leading" secondItem="lx5-e1-sSL" secondAttribute="leadingMargin" constant="28" id="pXS-o1-PED"/>
                             <constraint firstItem="Ruw-Vr-yke" firstAttribute="centerX" secondItem="lx5-e1-sSL" secondAttribute="centerX" id="rvs-hg-9JG"/>
                             <constraint firstItem="MVw-cc-3kl" firstAttribute="leading" secondItem="lx5-e1-sSL" secondAttribute="leading" id="srh-G8-lrQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bPh-Hx-kN0"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="bPh-Hx-kN0">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="nQi-6w-PSy">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="back:" destination="mXx-6w-JLS" id="XJz-Y8-1bG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="backButton" destination="nQi-6w-PSy" id="oEA-de-cuG"/>
                         <outlet property="nextButton" destination="Ruw-Vr-yke" id="zDK-C9-XYy"/>
                         <outlet property="scrollView" destination="MVw-cc-3kl" id="mjN-GO-00i"/>
                         <outlet property="stepperView" destination="MSE-gA-0hx" id="8iP-xK-qpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RB4-eR-BI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zdu-Hh-uTc">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="mXx-6w-JLS" id="b7v-R2-ndG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="108" y="705.69715142428788"/>
+            <point key="canvasLocation" x="1047.2" y="705.69715142428788"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GLz-lf-s7s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Gq-rZ-dQZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NT3-UZ-FqO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mXx-6w-JLS" kind="relationship" relationship="rootViewController" id="bX8-W9-AaN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbK-Wt-9f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="706"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="25" height="25"/>
         <image name="back_Button" width="50" height="50"/>
         <image name="rawabi-logo" width="110" height="164"/>
     </resources>

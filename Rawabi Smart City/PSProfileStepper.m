@@ -421,7 +421,10 @@ void withoutCAAnimation(withoutAnimationBlock code)
 
 - (CGColorRef)circleLabelColor:(PSTextLayer *)circleLabel
 {
-    return self.sliderPosition + diff >= [self circleLabelPosition:circleLabel] ? self.tintColor.CGColor : self.lineColor.CGColor;
+
+    
+       return self.sliderPosition + diff >= [self circleLabelPosition:circleLabel] ? [UIColor whiteColor].CGColor : self.lineColor.CGColor;
+    // return self.sliderPosition + diff >= [self circleLabelPosition:circleLabel] ? self.tintColor.CGColor : self.lineColor.CGColor;
 }
 
 - (CGColorRef)lineInnerCircleColor:(CAShapeLayer *)lineCircle

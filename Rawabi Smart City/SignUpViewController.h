@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "PSProfileStepper.h"
-#import "customView.h"
-#import "customView2.h"
-#import "employeeView.h"
-#import "customView4.h"
-#import "customView5.h"
-@interface SignUpViewController : UIViewController
+
+#import "personalDetails.h"
+#import "employeeDetails.h"
+#import "residencyDetails.h"
+
+
+@interface SignUpViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate>
+
+-(BOOL) NSStringIsValidEmail:(NSString *)checkString;
 
 @end

@@ -28,7 +28,7 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIColor *innerCircleNormalColor;
 
 @property (nonatomic, strong) IBInspectable NSString *labelFontName;
-
+@property (nonatomic, strong) IBInspectable NSString *labelText;
 
 - (void)setIndex:(NSUInteger)index animated:(BOOL)animated;
 

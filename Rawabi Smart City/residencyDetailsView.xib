@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="residencyDetails">
+            <connections>
+                <outlet property="apartmentNumberMenu" destination="ySQ-sn-o4x" id="Qc9-KV-dVd"/>
+                <outlet property="buildingNumberMenu" destination="ajy-ab-ijE" id="MDI-an-y3h"/>
+                <outlet property="floorMenu" destination="mID-G9-weJ" id="rqM-xB-dND"/>
+                <outlet property="neighborhoodMenu" destination="czu-ZL-7OB" id="uOK-u3-xeW"/>
+                <outlet property="noButton" destination="AQ4-0U-p9H" id="pd8-qV-MBn"/>
+                <outlet property="questionLabel" destination="9UD-t4-8ws" id="jOS-jE-nRa"/>
+                <outlet property="residencyTypeMenu" destination="Ysf-tC-0SJ" id="Ncz-Qq-vqF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3z1-OD-trY"/>
+                <outlet property="yesButton" destination="Bne-ji-QYc" id="hU5-VB-frX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UD-t4-8ws">
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Fxf-OU-7oG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-tC-0SJ" customClass="KPDropMenu">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czu-ZL-7OB" customClass="KPDropMenu">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajy-ab-ijE" customClass="KPDropMenu">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mID-G9-weJ" customClass="KPDropMenu">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySQ-sn-o4x" customClass="KPDropMenu">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="itemFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bne-ji-QYc" customClass="DLRadioButton">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Qmc-SK-s5H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="YES">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iconStrokeWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="select:" destination="-1" eventType="touchUpInside" id="7X6-Ri-2RU"/>
+                        <outletCollection property="otherButtons" destination="AQ4-0U-p9H" id="Sdi-ag-2H2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-0U-p9H" customClass="DLRadioButton">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="QHH-Fg-EgU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="NO">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="select:" destination="-1" eventType="touchUpInside" id="n2E-ko-l2d"/>
+                        <outletCollection property="otherButtons" destination="Bne-ji-QYc" id="AK1-oV-18T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="czu-ZL-7OB" secondAttribute="bottom" constant="300" id="0yS-qw-cr9"/>
+                <constraint firstItem="9UD-t4-8ws" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="181" id="1gd-P3-2eA"/>
+                <constraint firstItem="Bne-ji-QYc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9UD-t4-8ws" secondAttribute="trailing" constant="158" id="3tA-3m-vk2"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="trailing" secondItem="ySQ-sn-o4x" secondAttribute="trailing" id="5SS-yE-LcV"/>
+                <constraint firstAttribute="bottom" secondItem="ySQ-sn-o4x" secondAttribute="bottom" constant="108" id="7C5-Tf-SpM"/>
+                <constraint firstAttribute="trailing" secondItem="AQ4-0U-p9H" secondAttribute="trailing" constant="16" id="ECL-5r-B1v"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HLL-qf-2EW"/>
+                <constraint firstAttribute="bottom" secondItem="mID-G9-weJ" secondAttribute="bottom" constant="172" id="IhW-FR-8cN"/>
+                <constraint firstItem="AQ4-0U-p9H" firstAttribute="leading" secondItem="Bne-ji-QYc" secondAttribute="trailing" constant="27" id="Qjg-ua-aeF"/>
+                <constraint firstAttribute="bottom" secondItem="Bne-ji-QYc" secondAttribute="bottom" constant="467" id="TOW-fi-fJE"/>
+                <constraint firstAttribute="bottom" secondItem="AQ4-0U-p9H" secondAttribute="bottom" constant="467" id="WJy-z9-409"/>
+                <constraint firstAttribute="trailing" secondItem="Ysf-tC-0SJ" secondAttribute="trailing" constant="43" id="Xg5-vg-gfa"/>
+                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="39" id="XtP-4D-FHc"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="41" id="fv7-yR-t8h"/>
+                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="top" secondItem="AQ4-0U-p9H" secondAttribute="bottom" constant="59" id="gBi-5x-tw5"/>
+                <constraint firstAttribute="bottom" secondItem="ajy-ab-ijE" secondAttribute="bottom" constant="236" id="hBR-wA-var"/>
+                <constraint firstItem="9UD-t4-8ws" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hcX-SC-9Jl"/>
+                <constraint firstItem="ySQ-sn-o4x" firstAttribute="top" secondItem="mID-G9-weJ" secondAttribute="bottom" constant="20" id="i2q-Ll-YLc"/>
+                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="trailing" secondItem="czu-ZL-7OB" secondAttribute="trailing" id="ndP-iS-bKO"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="trailing" secondItem="mID-G9-weJ" secondAttribute="trailing" id="obR-YR-nec"/>
+                <constraint firstItem="mID-G9-weJ" firstAttribute="top" secondItem="ajy-ab-ijE" secondAttribute="bottom" constant="20" id="q6t-Yb-rLL"/>
+                <constraint firstAttribute="bottom" secondItem="Ysf-tC-0SJ" secondAttribute="bottom" constant="364" id="qTi-vh-3mG"/>
+                <constraint firstItem="czu-ZL-7OB" firstAttribute="top" secondItem="Ysf-tC-0SJ" secondAttribute="bottom" constant="20" id="rRS-Af-S5L"/>
+                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="leading" secondItem="czu-ZL-7OB" secondAttribute="leading" id="sBP-9s-qJ7"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="ySQ-sn-o4x" secondAttribute="leading" id="uUp-MC-ZLG"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="mID-G9-weJ" secondAttribute="leading" id="v9H-zB-CsD"/>
+                <constraint firstItem="ajy-ab-ijE" firstAttribute="top" secondItem="czu-ZL-7OB" secondAttribute="bottom" constant="20" id="z36-oc-23G"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

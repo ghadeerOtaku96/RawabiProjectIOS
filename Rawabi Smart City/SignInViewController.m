@@ -56,6 +56,7 @@
     self.loginButton.layer.cornerRadius = 5;
     self.loginButton.clipsToBounds = YES;
     
+    [self.signUpButton setTitle:NSLocalizedStringFromTable(@"Signup Btn", @"uiStrings", nil) forState:UIControlStateNormal];
     
 }
 - (void)didReceiveMemoryWarning {
@@ -157,6 +158,8 @@
 }
 
 - (IBAction)login:(UIButton *)sender {
+}
+- (IBAction)showSignUpPage:(UIButton *)sender {
 }
 
 /*

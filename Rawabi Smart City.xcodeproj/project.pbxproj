@@ -20,21 +20,17 @@
 		14557D152105F16D0056859F /* contentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D132105F16D0056859F /* contentViewController.m */; };
 		14557D192105F1A70056859F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D182105F1A70056859F /* SignInViewController.m */; };
 		14557D1D2105F1BB0056859F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D1C2105F1BB0056859F /* SignUpViewController.m */; };
-		14557D2E2105F1F10056859F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D1F2105F1F10056859F /* View.xib */; };
-		14557D2F2105F1F10056859F /* customView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D212105F1F10056859F /* customView.m */; };
-		14557D302105F1F10056859F /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D222105F1F10056859F /* View2.xib */; };
-		14557D312105F1F10056859F /* customView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D242105F1F10056859F /* customView2.m */; };
-		14557D322105F1F10056859F /* View4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D252105F1F10056859F /* View4.xib */; };
-		14557D332105F1F10056859F /* customView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D272105F1F10056859F /* customView4.m */; };
-		14557D342105F1F10056859F /* View5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D282105F1F10056859F /* View5.xib */; };
-		14557D352105F1F10056859F /* customView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D2A2105F1F10056859F /* customView5.m */; };
-		14557D362105F1F10056859F /* employeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D2C2105F1F10056859F /* employeeView.m */; };
-		14557D372105F1F10056859F /* employeeViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14557D2D2105F1F10056859F /* employeeViewXIB.xib */; };
 		14557D3C2105F22C0056859F /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D3B2105F22C0056859F /* DLRadioButton.m */; };
 		14557D3F2105F2350056859F /* PSProfileStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D3E2105F2350056859F /* PSProfileStepper.m */; };
 		14557D432105F25F0056859F /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D422105F25F0056859F /* ACFloatingTextField.m */; };
 		14557D452105F28D0056859F /* uiStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14557D442105F28D0056859F /* uiStrings.strings */; };
-		14557D4D2105F2F30056859F /* KPDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557D4C2105F2F30056859F /* KPDropMenu.m */; };
+		1492D9782106FF150008E546 /* personalDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1492D9772106FF150008E546 /* personalDetailsView.xib */; };
+		1492D97B2106FF290008E546 /* personalDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D97A2106FF290008E546 /* personalDetails.m */; };
+		1492D97D210701770008E546 /* employeeDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1492D97C210701770008E546 /* employeeDetailsView.xib */; };
+		1492D9832107052A0008E546 /* employeeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D9822107052A0008E546 /* employeeDetails.m */; };
+		1492D985210706A50008E546 /* residencyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1492D984210706A50008E546 /* residencyDetailsView.xib */; };
+		1492D988210706BC0008E546 /* residencyDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D987210706BC0008E546 /* residencyDetails.m */; };
+		14F85BD7210857DB00A5F766 /* KPDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F85BD5210857DB00A5F766 /* KPDropMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,21 +75,6 @@
 		14557D182105F1A70056859F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		14557D1B2105F1BB0056859F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		14557D1C2105F1BB0056859F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		14557D1F2105F1F10056859F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		14557D202105F1F10056859F /* customView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView.h; sourceTree = "<group>"; };
-		14557D212105F1F10056859F /* customView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView.m; sourceTree = "<group>"; };
-		14557D222105F1F10056859F /* View2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
-		14557D232105F1F10056859F /* customView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView2.h; sourceTree = "<group>"; };
-		14557D242105F1F10056859F /* customView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView2.m; sourceTree = "<group>"; };
-		14557D252105F1F10056859F /* View4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View4.xib; sourceTree = "<group>"; };
-		14557D262105F1F10056859F /* customView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView4.h; sourceTree = "<group>"; };
-		14557D272105F1F10056859F /* customView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView4.m; sourceTree = "<group>"; };
-		14557D282105F1F10056859F /* View5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View5.xib; sourceTree = "<group>"; };
-		14557D292105F1F10056859F /* customView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView5.h; sourceTree = "<group>"; };
-		14557D2A2105F1F10056859F /* customView5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customView5.m; sourceTree = "<group>"; };
-		14557D2B2105F1F10056859F /* employeeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = employeeView.h; sourceTree = "<group>"; };
-		14557D2C2105F1F10056859F /* employeeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = employeeView.m; sourceTree = "<group>"; };
-		14557D2D2105F1F10056859F /* employeeViewXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = employeeViewXIB.xib; sourceTree = "<group>"; };
 		14557D3A2105F22C0056859F /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		14557D3B2105F22C0056859F /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		14557D3D2105F2350056859F /* PSProfileStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProfileStepper.h; sourceTree = "<group>"; };
@@ -103,8 +84,17 @@
 		14557D442105F28D0056859F /* uiStrings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = uiStrings.strings; sourceTree = "<group>"; };
 		14557D482105F2C30056859F /* Blackletter Buffoonery.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blackletter Buffoonery.otf"; sourceTree = "<group>"; };
 		14557D492105F2C30056859F /* blackpool_gothic_nbp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackpool_gothic_nbp.ttf; sourceTree = "<group>"; };
-		14557D4B2105F2F30056859F /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
-		14557D4C2105F2F30056859F /* KPDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDropMenu.m; sourceTree = "<group>"; };
+		1492D9772106FF150008E546 /* personalDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personalDetailsView.xib; sourceTree = "<group>"; };
+		1492D9792106FF290008E546 /* personalDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalDetails.h; sourceTree = "<group>"; };
+		1492D97A2106FF290008E546 /* personalDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalDetails.m; sourceTree = "<group>"; };
+		1492D97C210701770008E546 /* employeeDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = employeeDetailsView.xib; sourceTree = "<group>"; };
+		1492D9812107052A0008E546 /* employeeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = employeeDetails.h; sourceTree = "<group>"; };
+		1492D9822107052A0008E546 /* employeeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = employeeDetails.m; sourceTree = "<group>"; };
+		1492D984210706A50008E546 /* residencyDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = residencyDetailsView.xib; sourceTree = "<group>"; };
+		1492D986210706BC0008E546 /* residencyDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residencyDetails.h; sourceTree = "<group>"; };
+		1492D987210706BC0008E546 /* residencyDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = residencyDetails.m; sourceTree = "<group>"; };
+		14F85BD5210857DB00A5F766 /* KPDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDropMenu.m; sourceTree = "<group>"; };
+		14F85BD6210857DB00A5F766 /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,21 +226,15 @@
 		14557D1E2105F1CF0056859F /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				14557D1F2105F1F10056859F /* View.xib */,
-				14557D202105F1F10056859F /* customView.h */,
-				14557D212105F1F10056859F /* customView.m */,
-				14557D222105F1F10056859F /* View2.xib */,
-				14557D232105F1F10056859F /* customView2.h */,
-				14557D242105F1F10056859F /* customView2.m */,
-				14557D252105F1F10056859F /* View4.xib */,
-				14557D262105F1F10056859F /* customView4.h */,
-				14557D272105F1F10056859F /* customView4.m */,
-				14557D282105F1F10056859F /* View5.xib */,
-				14557D292105F1F10056859F /* customView5.h */,
-				14557D2A2105F1F10056859F /* customView5.m */,
-				14557D2B2105F1F10056859F /* employeeView.h */,
-				14557D2C2105F1F10056859F /* employeeView.m */,
-				14557D2D2105F1F10056859F /* employeeViewXIB.xib */,
+				1492D9772106FF150008E546 /* personalDetailsView.xib */,
+				1492D9792106FF290008E546 /* personalDetails.h */,
+				1492D97A2106FF290008E546 /* personalDetails.m */,
+				1492D97C210701770008E546 /* employeeDetailsView.xib */,
+				1492D9812107052A0008E546 /* employeeDetails.h */,
+				1492D9822107052A0008E546 /* employeeDetails.m */,
+				1492D984210706A50008E546 /* residencyDetailsView.xib */,
+				1492D986210706BC0008E546 /* residencyDetails.h */,
+				1492D987210706BC0008E546 /* residencyDetails.m */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -294,8 +278,8 @@
 		14557D4A2105F2DE0056859F /* KDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				14557D4B2105F2F30056859F /* KPDropMenu.h */,
-				14557D4C2105F2F30056859F /* KPDropMenu.m */,
+				14F85BD6210857DB00A5F766 /* KPDropMenu.h */,
+				14F85BD5210857DB00A5F766 /* KPDropMenu.m */,
 			);
 			name = KDropDownMenu;
 			sourceTree = "<group>";
@@ -407,15 +391,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14557D0E2105F1360056859F /* Info.plist in Resources */,
-				14557D2E2105F1F10056859F /* View.xib in Resources */,
-				14557D342105F1F10056859F /* View5.xib in Resources */,
+				1492D97D210701770008E546 /* employeeDetailsView.xib in Resources */,
+				1492D9782106FF150008E546 /* personalDetailsView.xib in Resources */,
 				14557D452105F28D0056859F /* uiStrings.strings in Resources */,
-				14557D372105F1F10056859F /* employeeViewXIB.xib in Resources */,
-				14557D322105F1F10056859F /* View4.xib in Resources */,
+				1492D985210706A50008E546 /* residencyDetailsView.xib in Resources */,
 				14557D0D2105F1360056859F /* LaunchScreen.storyboard in Resources */,
 				14557D0C2105F1360056859F /* Assets.xcassets in Resources */,
 				14557D0B2105F1360056859F /* Main.storyboard in Resources */,
-				14557D302105F1F10056859F /* View2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,19 +422,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14557D312105F1F10056859F /* customView2.m in Sources */,
 				14557D0A2105F1360056859F /* ViewController.m in Sources */,
 				14557D092105F1360056859F /* AppDelegate.m in Sources */,
 				14557D142105F16D0056859F /* welcomePageViewController.m in Sources */,
 				14557D3F2105F2350056859F /* PSProfileStepper.m in Sources */,
-				14557D352105F1F10056859F /* customView5.m in Sources */,
-				14557D332105F1F10056859F /* customView4.m in Sources */,
+				1492D97B2106FF290008E546 /* personalDetails.m in Sources */,
 				14557CC22105F0AB0056859F /* main.m in Sources */,
+				14F85BD7210857DB00A5F766 /* KPDropMenu.m in Sources */,
 				14557D192105F1A70056859F /* SignInViewController.m in Sources */,
-				14557D362105F1F10056859F /* employeeView.m in Sources */,
+				1492D988210706BC0008E546 /* residencyDetails.m in Sources */,
+				1492D9832107052A0008E546 /* employeeDetails.m in Sources */,
 				14557D3C2105F22C0056859F /* DLRadioButton.m in Sources */,
-				14557D2F2105F1F10056859F /* customView.m in Sources */,
-				14557D4D2105F2F30056859F /* KPDropMenu.m in Sources */,
 				14557D1D2105F1BB0056859F /* SignUpViewController.m in Sources */,
 				14557D432105F25F0056859F /* ACFloatingTextField.m in Sources */,
 				14557D152105F16D0056859F /* contentViewController.m in Sources */,
@@ -668,6 +648,7 @@
 				14557CEC2105F0AC0056859F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14557CED2105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityTests" */ = {
 			isa = XCConfigurationList;
@@ -676,6 +657,7 @@
 				14557CEF2105F0AC0056859F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14557CF02105F0AC0056859F /* Build configuration list for PBXNativeTarget "Rawabi Smart CityUITests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +666,7 @@
 				14557CF22105F0AC0056859F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

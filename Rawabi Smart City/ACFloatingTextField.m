@@ -50,11 +50,11 @@
 
 #pragma mark :- Drawing Text Rect
 - (CGRect)textRectForBounds:(CGRect)bounds {
-    return CGRectMake(30, 4, bounds.size.width, bounds.size.height);
+    return CGRectMake(30, 4, bounds.size.width-50, bounds.size.height);
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds {
-    return CGRectMake(30, 4, bounds.size.width, bounds.size.height);
+    return CGRectMake(30, 4, bounds.size.width-50, bounds.size.height);
 }
 
 #pragma mark  Override Set text

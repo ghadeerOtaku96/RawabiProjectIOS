@@ -53,6 +53,7 @@
     _itemFontSize = 14.0;
     _itemsFont = [UIFont systemFontOfSize:14.0];
     _DirectionDown = YES;
+    
 }
 
 #pragma mark - Setter
@@ -120,15 +121,19 @@
     self.layer.borderColor = [[UIColor grayColor] CGColor];
     self.layer.borderWidth = 1;
     
+
+    
     if(label == nil){
-        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0.9*self.frame.size.width, self.frame.size.height)];
         label.textColor = _titleColor;
         label.text = _title;
         label.textAlignment = _titleTextAlignment;
         label.font = font;
         [self addSubview:label];
     }
-    
+    self.icon = [[UIImageView alloc]initWithFrame:CGRectMake(label.frame.size.width + 5, 0.33 * label.frame.size.height, 0.05 * self.frame.size.width, 0.05 * self.frame.size.width)];
+    [self.icon setImage:[UIImage imageNamed:@"drop-down-arrow"]];
+    [self addSubview:self.icon];
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
     [self addGestureRecognizer:tapGesture];
     

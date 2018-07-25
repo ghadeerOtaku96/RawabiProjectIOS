@@ -62,6 +62,7 @@ IB_DESIGNABLE
 -(void)hideError;
 -(void)showErrorWithText:(NSString *)errorText;
 -(void)updateTextField:(CGRect)frame;
+-(void)shakeView:(UIView *)view;
 
 
 

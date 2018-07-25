@@ -12,16 +12,19 @@
 {
     int index;
     CGRect frameView;
+    CGSize keySize;
 }
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet PSProfileStepper *stepperView;
-@property (strong, nonatomic) NSMutableArray* subviews;
-@property (strong, nonatomic) customView* firstView;
 
-@property (strong, nonatomic) customView2* secondView;
-@property (strong, nonatomic) employeeView* thirdView;
-@property (strong, nonatomic) customView4* forthView;
+@property (nonatomic, strong) UIScrollView* scrollView1;
+@property (strong, nonatomic) personalDetails* firstView;
+@property (strong, nonatomic) employeeDetails* secondView;
+@property (strong, nonatomic) residencyDetails* thirdView;
+
+
 @end
 
 @implementation SignUpViewController
@@ -38,70 +41,213 @@
 
 -(void)setup{
     index = 0;
+
+    
     [self.stepperView setIndex:2 animated:YES];
     
     [self.scrollView showsHorizontalScrollIndicator];
 
-   
+    [self.scrollView setScrollEnabled:NO];
+//    self.scrollView1 = [[UIScrollView alloc]initWithFrame:CGRectMake(self.scrollView.frame.origin.x,self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height )];
+    
+    
+    
+   dispatch_async(dispatch_get_main_queue(), ^{
     frameView = CGRectMake(self.scrollView.frame.origin.x, self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height);
-    self.firstView = [[customView alloc]initWithFrame:frameView];
+    self.firstView = [[personalDetails alloc]initWithFrame:frameView];
     self.firstView.center = CGPointMake(190, 260);
-    [self.firstView setBackgroundColor:[UIColor blueColor]];
-    dispatch_async(dispatch_get_main_queue(), ^{
-    self.firstView.profileImageView.image = [UIImage imageNamed:@"rawabi-logo"];
-    self.firstView.profileImageView.layer.cornerRadius = self.firstView.profileImageView.frame.size.width/2;
-    self.firstView.profileImageView.layer.masksToBounds = YES;});
     [self.scrollView addSubview:self.firstView];
     
+    self.firstView.firstNameTextField.delegate =self;
+    self.firstView.lastNameTextField.delegate = self;
+    self.firstView.emailTextField.delegate = self;
+    self.firstView.phoneTextField.delegate = self;
     
+    [self.firstView.firstNameTextField resignFirstResponder];
+    [self.firstView.lastNameTextField resignFirstResponder];
+    [self.firstView.emailTextField resignFirstResponder];
+    [self.firstView.phoneTextField resignFirstResponder];
+    
+    
+  
+ 
     frameView = CGRectMake(self.view.frame.size.width, self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height);
-    self.secondView = [[customView2 alloc]initWithFrame:frameView];
+    self.secondView = [[employeeDetails alloc]initWithFrame:frameView];
     self.secondView.center = CGPointMake(565, 180);
-    [self.secondView setBackgroundColor:[UIColor blackColor]];
     [self.scrollView addSubview:self.secondView];
     
     frameView = CGRectMake(2*self.view.frame.size.width, self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height);
-    self.thirdView = [[employeeView alloc]initWithFrame:frameView];
+    self.thirdView = [[residencyDetails alloc]initWithFrame:frameView];
     self.thirdView.center = CGPointMake(940, 180);
-    [self.thirdView setBackgroundColor:[UIColor redColor]];
     [self.scrollView addSubview:self.thirdView];
     
-    frameView = CGRectMake(3*self.view.frame.size.width, self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height);
-    self.forthView = [[customView4 alloc]initWithFrame:frameView];
-    self.forthView.center = CGPointMake(1315, 180);
-    [self.forthView setBackgroundColor:[UIColor greenColor]];
-    [self.scrollView addSubview:self.forthView];
+
+    
     [self.nextButton setTitle:NSLocalizedStringFromTable(@"Next Btn", @"uiStrings", nil) forState:UIControlStateNormal];
+        self.nextButton.layer.cornerRadius = 10;
+        self.nextButton.clipsToBounds = YES;
+    });
    
-   
-    //self.subviews = [NSMutableArray arrayWithObjects:self.firstView,self.secondView,self.thirdView,self.forthView, nil];
+  
 
     
     
   
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    if([self NSStringIsValidEmail:self.firstView.emailTextField.text] == NO){
+        [self.firstView.emailTextField setLineColor:[UIColor redColor]]; 
+   
+    }
+    if([self NSStringIsValidPhone:self.firstView.phoneTextField.text] == NO){
+        [self.firstView.phoneTextField setLineColor:[UIColor redColor]];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+
+}
+
+#pragma mark - UITextFieldDelegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+    CGFloat buttonHeight = self.firstView.phoneTextField.frame.size.height;
+    CGRect visibleRect = self.firstView.frame;
+    visibleRect.size.height = buttonHeight;
+    CGPoint scrollPoint = CGPointMake(0.0,  2*visibleRect.size.height );
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+    
+        
+ 
+
+}
+-(void)textFieldDidEndEditing:(ACFloatingTextField *)textField{
+    [self.scrollView setContentOffset:CGPointZero animated:YES];
+    
+    textField.rightViewMode = UITextFieldViewModeNever;
+    
+    if([textField.text  isEqualToString:@""]){
+        textField.lineColor = [UIColor redColor];
+        textField.errorText = @"Empty input";
+        UIImageView* errorIcon = [[UIImageView alloc]initWithFrame:CGRectMake(textField.frame.size.width-25, 2, 25, 25)];
+        errorIcon.image = [UIImage imageNamed:@"error"];
+        [textField setRightView:errorIcon];
+        textField.rightViewMode = UITextFieldViewModeAlways;
+//        [textField showError];
+//        [textField shakeView:textField];
+        
+    }
+}
+// any touch outside the text fields will be ignored and disable the keyboard
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.firstView.firstNameTextField resignFirstResponder];
+    [self.firstView.lastNameTextField resignFirstResponder];
+    [self.firstView.emailTextField resignFirstResponder];
+    [self.firstView.phoneTextField resignFirstResponder];
+
+}
+
+#pragma - mark NEXT_DONE button
+//process NEXT and DONE button on keyboard
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if(textField == self.firstView.firstNameTextField)
+        [self.firstView.lastNameTextField becomeFirstResponder];
+    else if(textField == self.firstView.lastNameTextField)
+        [self.firstView.emailTextField becomeFirstResponder];
+    else if (textField == self.firstView.emailTextField)
+        [self.firstView.phoneTextField becomeFirstResponder];
+    else
+    {
+        [self.firstView.firstNameTextField endEditing:YES];
+        [self.firstView.lastNameTextField endEditing:YES];
+        [self.firstView.emailTextField endEditing:YES];
+        [self.firstView.phoneTextField endEditing:YES];
+    }
+    
+    return YES;
+}
+#pragma mark - Dismiss Keyboard
+- (IBAction)dismissKeyboard:(id)sender {
+    
+    [self.firstView.firstNameTextField endEditing:YES];
+    [self.firstView.lastNameTextField endEditing:YES];
+    [self.firstView.emailTextField endEditing:YES];
+    [self.firstView.phoneTextField endEditing:YES];
+}
+
+
+
+#pragma mark - Event Handling
 - (IBAction)next:(UIButton *)sender {
     
-  
-    
-    index = index + 24;
+    [self.backButton setEnabled:YES];
+    index = index + 50;
     [self.stepperView setIndex:index animated:YES];
  
-    [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x +1+ self.scrollView.frame.size.width/5, 0) animated:YES];
+    [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x +1+ self.scrollView.frame.size.width/3, 0) animated:YES];
+    NSLog(@"index %d",index);
    
-    if(index>=96){
+    
+    if(index>=99){
         sender.enabled = NO;
+    
         // go to next step
     }
     
     
-    //self.scrollView insertSubview: atIndex:;
+    
 
+}
+
+- (IBAction)back:(UIBarButtonItem *)sender {
+    
+    [self.nextButton setEnabled:YES];
+    if(index >= 50){
+        index = index - 50;
+        [self.stepperView setIndex:index animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x -1- self.scrollView.frame.size.width/3, 0) animated:YES];
+        NSLog(@"index %d",index);
+    }
+    else{
+        sender.enabled = NO;
+        index = 0;
+    }
+    
+}
+
+
+
+#pragma mark - Data Validation
+-(BOOL) NSStringIsValidEmail:(NSString *)checkString
+ {
+ BOOL stricterFilter = NO;
+ NSString *stricterFilterString = @"^[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$";
+ NSString *laxString = @"^.+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*$";
+ NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+ NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+ return [emailTest evaluateWithObject:checkString];
+ }
+
+-(BOOL) NSStringIsValidPhone:(NSString *)checkString
+{
+    NSString *numberRegEx = @"[0-9]{10}";
+    NSPredicate *numberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberRegEx];
+    if ([numberTest evaluateWithObject:checkString] == YES)
+        return YES;
+    else
+        return NO;
 }
 
 

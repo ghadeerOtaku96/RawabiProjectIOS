@@ -64,4 +64,6 @@ IB_DESIGNABLE
 /* Optional : Array of numbers indicating IDs which is assigned to Drop Menu as tag */
 @property (nonatomic, retain) NSArray *itemsIDs;
 
+@property (nonatomic) IBInspectable UIImageView *icon;
+
 @end
