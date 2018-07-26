@@ -30,6 +30,11 @@
 -(void)customInit{
     [[NSBundle mainBundle]loadNibNamed:@"personalDetailsView" owner:self options:nil];
     self.bounds = self.view.bounds;
+    
+    [self.firstNameTextField setBorderStyle:UITextBorderStyleNone];
+    [self.lastNameTextField setBorderStyle:UITextBorderStyleNone];
+    [self.emailTextField setBorderStyle:UITextBorderStyleNone];
+    [self.phoneTextField setBorderStyle:UITextBorderStyleNone];
 
 //    self.firstNameTextField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"user"]];
 //    self.firstNameTextField.leftViewMode = UITextFieldViewModeAlways;

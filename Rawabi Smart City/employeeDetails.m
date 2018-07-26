@@ -47,9 +47,6 @@
     self.companyDropDownMenu.title = @"Company";
     self.departmentDropDownMenu.title = @"Department";
 
-    
-    self.companyDropDownMenu.hidden = YES;
-    self.departmentDropDownMenu.hidden = YES;
     [self addSubview:self.view];
     
     
@@ -73,10 +70,10 @@
 
 #pragma mark - KPDropMenu Delegate Methods
 
--(void)didSelectItem : (KPDropMenu *) dropMenu atIndex : (int) atIntedex{
+-(void)didSelectItem:(KPDropMenu *)dropMenu atIndex:(int)atIntedex{
    
     
-        NSLog(@"%@", dropMenu.items[atIntedex]);
+        NSLog(@"item %@", dropMenu.items[atIntedex]);
 }
 
 -(void)didShow:(KPDropMenu *)dropMenu{
@@ -89,7 +86,7 @@
     NSLog(@"didHide");
 }
 
-
+//
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

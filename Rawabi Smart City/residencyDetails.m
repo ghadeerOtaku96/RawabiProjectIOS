@@ -84,7 +84,7 @@
 
 #pragma mark - KPDropMenu Delegate Methods
 
--(void)didSelectItem : (KPDropMenu *) dropMenu atIndex : (int) atIntedex{
+-(void)didSelectItem:(KPDropMenu *)dropMenu atIndex:(int)atIntedex{
     
     NSLog(@"%@", dropMenu.items[atIntedex]);
 }

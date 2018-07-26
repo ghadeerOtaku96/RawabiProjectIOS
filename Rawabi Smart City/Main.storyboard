@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Gq-rZ-dQZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nTP-5j-D8a">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -109,7 +109,7 @@
                                             <constraint firstAttribute="height" constant="60" id="Awo-6i-e7N"/>
                                         </constraints>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
@@ -138,7 +138,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="1Lb-QF-HAb"/>
                                             <constraint firstAttribute="height" constant="30" id="yDR-R8-Fct"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="13"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -152,8 +152,8 @@
                                             <constraint firstAttribute="height" constant="60" id="X63-Bl-Hb7"/>
                                         </constraints>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                                 <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,7 +180,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="NV2-Sh-Oyw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="20"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -194,7 +194,7 @@
                                             <constraint firstAttribute="height" constant="30" id="5jL-O6-A6c"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="5v0-kZ-7b6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Blackpool-Gothic-NBP" family="Blackpool Gothic NBP" pointSize="13"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>

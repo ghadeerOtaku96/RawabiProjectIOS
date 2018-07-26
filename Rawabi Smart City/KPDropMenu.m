@@ -53,7 +53,7 @@
     _itemFontSize = 14.0;
     _itemsFont = [UIFont systemFontOfSize:14.0];
     _DirectionDown = YES;
-
+    
     
 }
 
@@ -122,7 +122,7 @@
     self.layer.borderColor = [[UIColor grayColor] CGColor];
     self.layer.borderWidth = 1;
     
-
+    
     
     if(label == nil){
         label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0.9 * self.frame.size.width, self.frame.size.height)];

@@ -8,7 +8,7 @@
 
 #import "SignUpViewController.h"
 
-@interface SignUpViewController ()
+@interface SignUpViewController () 
 {
     int index;
     CGRect frameView;
@@ -69,9 +69,7 @@
     [self.firstView.emailTextField resignFirstResponder];
     [self.firstView.phoneTextField resignFirstResponder];
     
-    
-  
- 
+
     frameView = CGRectMake(self.view.frame.size.width, self.scrollView.frame.origin.y, self.view.frame.size.width, self.scrollView.frame.size.height);
     self.secondView = [[employeeDetails alloc]initWithFrame:frameView];
     self.secondView.center = CGPointMake(565, 180);
@@ -164,6 +162,9 @@
             textField.rightViewMode = UITextFieldViewModeAlways;
             [textField shakeView:textField];
             
+            self.firstView.emailTextField.errorText = @"Not a valid Email";
+            self.firstView.emailTextField.errorTextColor = [UIColor redColor];
+            [self.firstView.emailTextField showError];
             self.nextButton.enabled = NO;
         }
     }
@@ -178,6 +179,9 @@
             textField.rightViewMode = UITextFieldViewModeAlways;
             [textField shakeView:textField];
             
+            self.firstView.phoneTextField.errorText = @"Not a valid phone number";
+            self.firstView.phoneTextField.errorTextColor = [UIColor redColor];
+            [self.firstView.phoneTextField showError];
             self.nextButton.enabled = NO;
         }
     }

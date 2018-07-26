@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14144E5A2109A63100F74CE8 /* KPDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14144E592109A63100F74CE8 /* KPDropMenu.m */; };
 		14557CC22105F0AB0056859F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CC12105F0AB0056859F /* main.m */; };
 		14557CDB2105F0AC0056859F /* Rawabi_Smart_CityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CDA2105F0AC0056859F /* Rawabi_Smart_CityTests.m */; };
 		14557CE62105F0AC0056859F /* Rawabi_Smart_CityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14557CE52105F0AC0056859F /* Rawabi_Smart_CityUITests.m */; };
@@ -30,7 +31,6 @@
 		1492D9832107052A0008E546 /* employeeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D9822107052A0008E546 /* employeeDetails.m */; };
 		1492D985210706A50008E546 /* residencyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1492D984210706A50008E546 /* residencyDetailsView.xib */; };
 		1492D988210706BC0008E546 /* residencyDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D987210706BC0008E546 /* residencyDetails.m */; };
-		14F85BD7210857DB00A5F766 /* KPDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F85BD5210857DB00A5F766 /* KPDropMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14144E582109A63100F74CE8 /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
+		14144E592109A63100F74CE8 /* KPDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDropMenu.m; sourceTree = "<group>"; };
 		14557CBD2105F0AB0056859F /* Rawabi Smart City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rawabi Smart City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14557CC12105F0AB0056859F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14557CD62105F0AC0056859F /* Rawabi Smart CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rawabi Smart CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +95,6 @@
 		1492D984210706A50008E546 /* residencyDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = residencyDetailsView.xib; sourceTree = "<group>"; };
 		1492D986210706BC0008E546 /* residencyDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residencyDetails.h; sourceTree = "<group>"; };
 		1492D987210706BC0008E546 /* residencyDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = residencyDetails.m; sourceTree = "<group>"; };
-		14F85BD5210857DB00A5F766 /* KPDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDropMenu.m; sourceTree = "<group>"; };
-		14F85BD6210857DB00A5F766 /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14144E572109A61B00F74CE8 /* KDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				14144E582109A63100F74CE8 /* KPDropMenu.h */,
+				14144E592109A63100F74CE8 /* KPDropMenu.m */,
+			);
+			name = KDropDownMenu;
+			sourceTree = "<group>";
+		};
 		14557CB42105F0AB0056859F = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +154,7 @@
 		14557CBF2105F0AB0056859F /* Rawabi Smart City */ = {
 			isa = PBXGroup;
 			children = (
-				14557D4A2105F2DE0056859F /* KDropDownMenu */,
+				14144E572109A61B00F74CE8 /* KDropDownMenu */,
 				14557D402105F23B0056859F /* ACFloatingTextField */,
 				14557D392105F21B0056859F /* PSProfileStepper */,
 				14557D382105F20E0056859F /* DLRadio Button */,
@@ -273,15 +282,6 @@
 				14557D492105F2C30056859F /* blackpool_gothic_nbp.ttf */,
 			);
 			name = "App Fonts";
-			sourceTree = "<group>";
-		};
-		14557D4A2105F2DE0056859F /* KDropDownMenu */ = {
-			isa = PBXGroup;
-			children = (
-				14F85BD6210857DB00A5F766 /* KPDropMenu.h */,
-				14F85BD5210857DB00A5F766 /* KPDropMenu.m */,
-			);
-			name = KDropDownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,7 +428,7 @@
 				14557D3F2105F2350056859F /* PSProfileStepper.m in Sources */,
 				1492D97B2106FF290008E546 /* personalDetails.m in Sources */,
 				14557CC22105F0AB0056859F /* main.m in Sources */,
-				14F85BD7210857DB00A5F766 /* KPDropMenu.m in Sources */,
+				14144E5A2109A63100F74CE8 /* KPDropMenu.m in Sources */,
 				14557D192105F1A70056859F /* SignInViewController.m in Sources */,
 				1492D988210706BC0008E546 /* residencyDetails.m in Sources */,
 				1492D9832107052A0008E546 /* employeeDetails.m in Sources */,
