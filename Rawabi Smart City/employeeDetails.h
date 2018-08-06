@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KPDropMenu.h"
+#import "RawabiAPI.h"
 #import "DLRadioButton.h"
-@interface employeeDetails : UIView <KPDropMenuDelegate>
+#import "KPDropMenu.h"
+@interface employeeDetails : UIView <RawabiAPIDelegate , KPDropMenuDelegate>
 @property (strong, nonatomic) IBOutlet UIView *view;
+
 
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 @property (strong, nonatomic) IBOutlet DLRadioButton *yesButton;
@@ -18,12 +20,20 @@
 @property (strong, nonatomic) IBOutlet KPDropMenu *companyDropDownMenu;
 @property (strong, nonatomic) IBOutlet KPDropMenu *departmentDropDownMenu;
 
-@property (nonatomic) NSInteger status;
+@property (strong, nonatomic) NSNumber* status;
 
-@property (strong, nonatomic) NSArray *companyArray;
-@property (strong, nonatomic) NSArray *departmentArry;
+@property (strong, nonatomic) NSMutableArray *companyArray;
+@property (strong, nonatomic) NSMutableArray *companyObjectArray;
+@property (strong, nonatomic) NSMutableArray *departmentArray;
+@property (strong, nonatomic)NSMutableArray *depObjArrar;
+@property (strong, nonatomic) NSString *companyID;
+@property (strong, nonatomic) NSString *departmentID;
 @property (strong, nonatomic) NSString *company;
+@property (strong, nonatomic) NSString *domain;
 @property (strong, nonatomic) NSString *department;
 
+@property (strong, nonatomic)RawabiAPI* rawabiAPI;
+@property (strong, nonatomic)NSMutableURLRequest* request;
+@property (strong, nonatomic)NSString* requestURL;
 
 @end

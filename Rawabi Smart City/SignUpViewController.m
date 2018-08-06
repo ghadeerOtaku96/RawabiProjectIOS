@@ -19,11 +19,19 @@
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet PSProfileStepper *stepperView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (nonatomic, strong) UIScrollView* scrollView1;
 @property (strong, nonatomic) personalDetails* firstView;
 @property (strong, nonatomic) employeeDetails* secondView;
 @property (strong, nonatomic) residencyDetails* thirdView;
+
+@property (strong, nonatomic)RawabiAPI* rawabiAPI;
+@property (strong, nonatomic)NSDictionary* receivedData;
+@property (strong, nonatomic)NSMutableURLRequest* request;
+
+@property (strong, nonatomic)NSData* postBody;
+@property (strong, nonatomic)NSString* json;
 
 
 @end
@@ -43,7 +51,8 @@
 -(void)setup{
     index = 0;
 
-    
+    [self.activityIndicator setHidden:YES];
+    self.rawabiAPI = [[RawabiAPI alloc]init];
     [self.stepperView setIndex:2 animated:YES];
     
     [self.scrollView showsHorizontalScrollIndicator];
@@ -140,6 +149,7 @@
     if([textField.text  isEqualToString:@""]){
         UIImageView* errorIcon = [[UIImageView alloc]initWithFrame:CGRectMake(textField.frame.size.width-25, 2, 25, 25)];
         textField.errorLineColor = [UIColor redColor];
+        textField.errorText = @"Empty Field";
         [textField showError];
         
         errorIcon.image = [UIImage imageNamed:@"error"];
@@ -237,7 +247,11 @@
     [self.firstView.phoneTextField.text isEqualToString:@""]) ;
     
     if(index >= 99 || status){
-        sender.enabled = NO;
+        [sender setTitle:@"SUBMIT" forState:UIControlStateNormal];
+        [self.activityIndicator setHidden:NO];
+        [self.activityIndicator startAnimating];
+        [self createPostBody];
+        [self postHttpRequest];
         
         // go to next step
     }
@@ -292,9 +306,73 @@
         return NO;
 }
 
+#pragma mark - HTTP Request Handling
+-(void)createPostBody{
+    
+    NSDictionary* dict = @{@"firstName":self.firstView.firstNameTextField.text,
+                           @"lastName":self.firstView.lastNameTextField.text,
+                           @"email":self.firstView.emailTextField.text,
+                           @"employee":self.secondView.status,
+                           @"department":self.secondView.department,
+                           @"department_id":self.secondView.departmentID,
+                           @"company":self.secondView.company,
+                           @"company_id":self.secondView.companyID,
+                           @"domain":self.secondView.domain,
+                           @"resident":self.thirdView.status,
+                           @"residency_type":self.thirdView.residencyType,
+                           @"building_number":self.thirdView.buildingNumber,
+                           @"building_id":self.thirdView.buildingNumberID,
+                           @"floor_number":self.thirdView.floor,
+                           @"floor_id":self.thirdView.floorID,
+                           @"apartment_number":self.thirdView.apartmentNumber,
+                           @"apartment_id":self.thirdView.apartmentNumberID,
+                           @"neighbourhood_name":self.thirdView.neighborhood,
+                           @"neighbourhood_id":self.thirdView.neighborhoodID,
+                           @"mobile":self.firstView.phoneTextField.text,
+                           @"hasRole":self.secondView.status,
+                           };
+    NSError* error = nil;
+    
+    //if([NSJSONSerialization isValidJSONObject:dict]){
+        self.postBody = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+        
+        if(self.postBody!= nil && error==nil){
+            self.json = [[NSString alloc]initWithData:self.postBody encoding:NSUTF8StringEncoding];
+            self.postBody = [NSData dataWithBytes:[self.json UTF8String] length:[self.json lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
+            NSLog(@"GG JSON::%@",self.json);
+            
+            
+        }
+    //}
+    
+}
 
 
+-(void)postHttpRequest
+{
+    NSString* postString = @"http://172.22.1.111:8080/auth/signUp";
+    postString = [postString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    self.request = [[NSMutableURLRequest alloc]init];
+    [self.request setURL:[NSURL URLWithString:postString]];
+    
+    [self.request setHTTPMethod:@"POST"];
+    [self.request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [self.request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [self.request setHTTPBody:self.postBody];
+    self.rawabiAPI.delegate = self;
+    [self.rawabiAPI httpRequest:self.request];
+}
 
+#pragma mark - RawabiAPI Delegate Method
+-(void)getReceivedData:(NSMutableData *)data sender:(RawabiAPI *)sender
+{
+    NSError* error = nil;
+    NSDictionary* receivedData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    self.receivedData = receivedData;
+    if(receivedData){
+        NSLog(@"DONE");
+    }
+}
 /*
 #pragma mark - Navigation
 

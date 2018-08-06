@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="Uok-LN-xwU">
             <objects>
-                <viewController id="nTP-5j-D8a" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="nTP-5j-D8a" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NjT-Hj-lFl"/>
                         <viewControllerLayoutGuide type="bottom" id="QIf-zB-uRL"/>
@@ -85,6 +85,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQd-hu-b8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-831.20000000000005" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fca-Hf-joU">
+            <objects>
+                <viewController storyboardIdentifier="nextVC" id="hQW-Tl-1NO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CxP-Vh-rsM"/>
+                        <viewControllerLayoutGuide type="bottom" id="2VF-am-ZBt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Py7-FC-UPy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V47-cc-IjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-831" y="1381"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="PoL-0p-ySR">
@@ -204,6 +222,11 @@
                                             <segue destination="5Gq-rZ-dQZ" kind="show" id="1Se-L4-rLC"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bLU-rg-wof">
+                                        <rect key="frame" x="253" y="559" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -248,6 +271,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="QimageView" destination="LCk-iC-5Rg" id="uq7-Ob-wUT"/>
+                        <outlet property="activityIndicator" destination="bLU-rg-wof" id="VbT-yo-YQE"/>
                         <outlet property="emailTextField" destination="RgF-ws-JGe" id="JJy-6m-sSx"/>
                         <outlet property="forgetPassButton" destination="uqZ-8U-bca" id="1S5-aX-wBv"/>
                         <outlet property="loginButton" destination="gGo-qM-ejL" id="UjG-lo-isR"/>
@@ -383,10 +407,15 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Gkp-Ql-9lk">
+                                <frame key="frameInset" minX="254" minY="595" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -413,6 +442,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="Gkp-Ql-9lk" id="qwY-ye-NFR"/>
                         <outlet property="backButton" destination="nQi-6w-PSy" id="oEA-de-cuG"/>
                         <outlet property="nextButton" destination="Ruw-Vr-yke" id="zDK-C9-XYy"/>
                         <outlet property="scrollView" destination="MVw-cc-3kl" id="mjN-GO-00i"/>
@@ -435,7 +465,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="T6m-fi-Yaj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NT3-UZ-FqO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NT3-UZ-FqO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

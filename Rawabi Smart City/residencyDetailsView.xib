@@ -8,13 +8,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="residencyDetails">
             <connections>
-                <outlet property="apartmentNumberMenu" destination="ySQ-sn-o4x" id="Qc9-KV-dVd"/>
-                <outlet property="buildingNumberMenu" destination="ajy-ab-ijE" id="MDI-an-y3h"/>
-                <outlet property="floorMenu" destination="mID-G9-weJ" id="rqM-xB-dND"/>
-                <outlet property="neighborhoodMenu" destination="czu-ZL-7OB" id="uOK-u3-xeW"/>
+                <outlet property="apartmentNumberMenu" destination="ySQ-sn-o4x" id="dQP-BG-d2X"/>
+                <outlet property="buildingNumberMenu" destination="ajy-ab-ijE" id="0rD-Lz-zbG"/>
+                <outlet property="floorMenu" destination="mID-G9-weJ" id="gHL-EV-LT4"/>
+                <outlet property="neighborhoodMenu" destination="czu-ZL-7OB" id="EXO-sw-79c"/>
                 <outlet property="noButton" destination="AQ4-0U-p9H" id="pd8-qV-MBn"/>
                 <outlet property="questionLabel" destination="9UD-t4-8ws" id="jOS-jE-nRa"/>
-                <outlet property="residencyTypeMenu" destination="Ysf-tC-0SJ" id="Ncz-Qq-vqF"/>
+                <outlet property="residencyTypeMenu" destination="Ysf-tC-0SJ" id="Pb2-fc-MpN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3z1-OD-trY"/>
                 <outlet property="yesButton" destination="Bne-ji-QYc" id="hU5-VB-frX"/>
             </connections>
@@ -32,7 +32,9 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-tC-0SJ" customClass="KPDropMenu">
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-tC-0SJ" customClass="KPDropMenu">
+                    <frame key="frameInset" minX="39" minY="259" width="293" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
@@ -57,7 +59,9 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czu-ZL-7OB" customClass="KPDropMenu">
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czu-ZL-7OB" customClass="KPDropMenu">
+                    <frame key="frameInset" minX="39" minY="323" width="293" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
@@ -82,7 +86,9 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajy-ab-ijE" customClass="KPDropMenu">
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajy-ab-ijE" customClass="KPDropMenu">
+                    <frame key="frameInset" minX="41" minY="387" width="293" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
@@ -107,7 +113,9 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mID-G9-weJ" customClass="KPDropMenu">
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mID-G9-weJ" customClass="KPDropMenu">
+                    <frame key="frameInset" minX="41" minY="451" width="293" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
@@ -132,7 +140,9 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="DirectionDown" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySQ-sn-o4x" customClass="KPDropMenu">
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ySQ-sn-o4x" customClass="KPDropMenu">
+                    <frame key="frameInset" minX="41" minY="515" width="293" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
@@ -205,33 +215,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="czu-ZL-7OB" secondAttribute="bottom" constant="300" id="0yS-qw-cr9"/>
                 <constraint firstItem="9UD-t4-8ws" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="181" id="1gd-P3-2eA"/>
                 <constraint firstItem="Bne-ji-QYc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9UD-t4-8ws" secondAttribute="trailing" constant="158" id="3tA-3m-vk2"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="trailing" secondItem="ySQ-sn-o4x" secondAttribute="trailing" id="5SS-yE-LcV"/>
-                <constraint firstAttribute="bottom" secondItem="ySQ-sn-o4x" secondAttribute="bottom" constant="108" id="7C5-Tf-SpM"/>
                 <constraint firstAttribute="trailing" secondItem="AQ4-0U-p9H" secondAttribute="trailing" constant="16" id="ECL-5r-B1v"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HLL-qf-2EW"/>
-                <constraint firstAttribute="bottom" secondItem="mID-G9-weJ" secondAttribute="bottom" constant="172" id="IhW-FR-8cN"/>
                 <constraint firstItem="AQ4-0U-p9H" firstAttribute="leading" secondItem="Bne-ji-QYc" secondAttribute="trailing" constant="27" id="Qjg-ua-aeF"/>
                 <constraint firstAttribute="bottom" secondItem="Bne-ji-QYc" secondAttribute="bottom" constant="467" id="TOW-fi-fJE"/>
                 <constraint firstAttribute="bottom" secondItem="AQ4-0U-p9H" secondAttribute="bottom" constant="467" id="WJy-z9-409"/>
-                <constraint firstAttribute="trailing" secondItem="Ysf-tC-0SJ" secondAttribute="trailing" constant="43" id="Xg5-vg-gfa"/>
-                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="39" id="XtP-4D-FHc"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="41" id="fv7-yR-t8h"/>
-                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="top" secondItem="AQ4-0U-p9H" secondAttribute="bottom" constant="59" id="gBi-5x-tw5"/>
-                <constraint firstAttribute="bottom" secondItem="ajy-ab-ijE" secondAttribute="bottom" constant="236" id="hBR-wA-var"/>
                 <constraint firstItem="9UD-t4-8ws" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hcX-SC-9Jl"/>
-                <constraint firstItem="ySQ-sn-o4x" firstAttribute="top" secondItem="mID-G9-weJ" secondAttribute="bottom" constant="20" id="i2q-Ll-YLc"/>
-                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="trailing" secondItem="czu-ZL-7OB" secondAttribute="trailing" id="ndP-iS-bKO"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="trailing" secondItem="mID-G9-weJ" secondAttribute="trailing" id="obR-YR-nec"/>
-                <constraint firstItem="mID-G9-weJ" firstAttribute="top" secondItem="ajy-ab-ijE" secondAttribute="bottom" constant="20" id="q6t-Yb-rLL"/>
-                <constraint firstAttribute="bottom" secondItem="Ysf-tC-0SJ" secondAttribute="bottom" constant="364" id="qTi-vh-3mG"/>
-                <constraint firstItem="czu-ZL-7OB" firstAttribute="top" secondItem="Ysf-tC-0SJ" secondAttribute="bottom" constant="20" id="rRS-Af-S5L"/>
-                <constraint firstItem="Ysf-tC-0SJ" firstAttribute="leading" secondItem="czu-ZL-7OB" secondAttribute="leading" id="sBP-9s-qJ7"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="ySQ-sn-o4x" secondAttribute="leading" id="uUp-MC-ZLG"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="leading" secondItem="mID-G9-weJ" secondAttribute="leading" id="v9H-zB-CsD"/>
-                <constraint firstItem="ajy-ab-ijE" firstAttribute="top" secondItem="czu-ZL-7OB" secondAttribute="bottom" constant="20" id="z36-oc-23G"/>
             </constraints>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>

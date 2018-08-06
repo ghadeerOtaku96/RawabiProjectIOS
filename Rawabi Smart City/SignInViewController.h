@@ -8,15 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "ACFloatingTextField.h"
+#import "RawabiAPI.h"
+#import "FCAlertView.h"
 #import "SignUpViewController.h"
 
-@interface SignInViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate>
+@interface SignInViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate , RawabiAPIDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *QimageView;
-@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
-@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet ACFloatingTextField *emailTextField;
+@property (strong, nonatomic) IBOutlet ACFloatingTextField *passwordTextField;
 @property (strong, nonatomic) IBOutlet UIButton *forgetPassButton;
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet UIButton *signUpButton;
 
+
+-(void)postHttpRequest;
+-(void)createPostBodyWithEmail:(NSString*)email AndPassword:(NSString*)password;
 @end

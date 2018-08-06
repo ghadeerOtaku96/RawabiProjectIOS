@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "PSProfileStepper.h"
-
+#import "RawabiAPI.h"
 #import "personalDetails.h"
 #import "employeeDetails.h"
 #import "residencyDetails.h"
 
 
-@interface SignUpViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate>
+@interface SignUpViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate , RawabiAPIDelegate>
 
 -(BOOL) NSStringIsValidEmail:(NSString *)checkString;
 

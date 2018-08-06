@@ -13,11 +13,20 @@
     UIImageView* emailIcon;
     UIImageView* passwordIcon;
 }
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic)RawabiAPI* rawabiAPI;
+@property (strong, nonatomic)NSDictionary* receivedData;
+@property (strong, nonatomic)NSMutableURLRequest* request;
+@property (strong, nonatomic)NSData* postBody;
+@property (strong, nonatomic)NSString* json;
+@property (strong, nonatomic)NSUserDefaults* user;
 @end
 
 @implementation SignInViewController
 
 #pragma mark - Application LifeCycle
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +36,8 @@
 
 -(void)setup{
     
+    [self.activityIndicator setHidden:YES];
+    self.rawabiAPI = [[RawabiAPI alloc]init];
     self.emailTextField.delegate = self;
     self.passwordTextField.delegate = self;
     [self.scrollView setScrollEnabled:NO];
@@ -211,9 +222,110 @@
 }
 
 - (IBAction)login:(UIButton *)sender {
+    
+    if(![self.emailTextField.text isEqualToString:@""] && ![self.passwordTextField.text isEqualToString:@""]){
+        [self.activityIndicator setHidden:NO];
+        [self.activityIndicator startAnimating];
+        [self createPostBodyWithEmail:self.emailTextField.text AndPassword:self.passwordTextField.text];
+        [self postHttpRequest];
+
+    }
 }
 - (IBAction)showSignUpPage:(UIButton *)sender {
 
+}
+
+#pragma mark - HTTP Requests handling
+-(void)createPostBodyWithEmail:(NSString*)email AndPassword:(NSString*)password{
+    
+    NSDictionary* dict = @{@"email":email, @"password":password};
+    
+    NSError* error = nil;
+    if([NSJSONSerialization isValidJSONObject:dict]){
+        self.postBody = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+        
+        if(self.postBody!= nil && error==nil){
+            self.json = [[NSString alloc]initWithData:self.postBody encoding:NSUTF8StringEncoding];
+            self.postBody = [NSData dataWithBytes:[self.json UTF8String] length:[self.json lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
+            NSLog(@"GG JSON::%@",self.json);
+           
+            
+        }
+        
+    }
+    
+}
+
+-(void)postHttpRequest
+{
+    NSString* postString = @"http://172.22.1.111:8080/auth/signIn";
+    postString = [postString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    self.request = [[NSMutableURLRequest alloc]init];
+    [self.request setURL:[NSURL URLWithString:postString]];
+    
+    [self.request setHTTPMethod:@"POST"];
+    [self.request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [self.request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [self.request setHTTPBody:_postBody];
+    self.rawabiAPI.delegate = self;
+    [self.rawabiAPI httpRequest:self.request];
+    NSLog(@"LOGED");
+}
+
+#pragma mark - RawabiAPI Delegate Method
+-(void)getReceivedData:(NSMutableData *)data sender:(RawabiAPI *)sender
+{
+    NSError* error = nil;
+    NSDictionary* receivedData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    self.receivedData = receivedData;
+    if(![[self.receivedData valueForKey:@"message"] isKindOfClass:[NSDictionary class]]){
+        NSLog(@"WRONG SIGNIN");
+        [self failedToSignIn];
+
+    }
+    else {
+        NSLog(@"CORRECT SIGNIN");
+        [self signInSuccessfully];
+    }
+    return ;
+}
+
+#pragma mark - SignIn Error Handling
+-(void)signInSuccessfully{
+    
+    self.user = [NSUserDefaults standardUserDefaults];
+    if(self.user){
+        [self.user setObject:self.emailTextField.text forKey:@"currentUser"];
+        [self.user setObject:self.passwordTextField.text forKey:@"currentPassword"];
+        [self.user synchronize];
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // go to the next ViewController
+        UIStoryboard* st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        UIViewController* nextVC =[st instantiateViewControllerWithIdentifier:@"nextVC"];
+        [self presentViewController:nextVC animated:YES completion:nil];
+    });
+}
+
+-(void)failedToSignIn{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error"message:@"There is an error in the data you've entered . please try again!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden = YES;
+    alert.tintColor = [UIColor redColor];
+    
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger) buttonIndex{
+    
+    self.passwordTextField.text = @"";
+    [self.passwordTextField resignFirstResponder];
+    [self.passwordTextField hideError];
+    self.passwordTextField.rightView = nil;
 }
 
 /*
