@@ -33,7 +33,6 @@
     self.bounds = self.view.bounds;
     
     self.rawabiAPI = [[RawabiAPI alloc]init];
-    self.requestURL = @"http://172.22.1.111:8080/admin/neighbourhood";
     self.questionLabel.text = @"Are you a resident at Rawabi?";
     self.residencyTypeMenu.items = @[@"Rent" , @"Owner"];
     self.neighborhoodArray = [[NSMutableArray alloc]init];
@@ -41,7 +40,6 @@
     self.floorArray = [[NSMutableArray alloc]init];
     self.apartmentNumberArray = [[NSMutableArray alloc]init];
     self.objectsArray = [[NSMutableArray alloc]init];
-
     
     self.residencyTypeMenu.title = @"Residency Type";
     self.neighborhoodMenu.title = @"Neighborhood";
@@ -55,8 +53,7 @@
     self.floorMenu.delegate = self;
     self.apartmentNumberMenu.delegate = self;
     
-    [self getHttpRequestWithURLString:self.requestURL];
-    
+ 
     [self addSubview:self.view];
 }
 
@@ -67,6 +64,8 @@
     if([sender.currentTitle isEqual:@"YES"]){
         
         self.status = [NSNumber numberWithBool:YES];
+        self.requestURL = @"http://172.22.1.111:8080/admin/neighbourhood";
+        [self getHttpRequestWithURLString:self.requestURL];
         self.residencyTypeMenu.hidden = NO;
 
     }
@@ -79,15 +78,15 @@
         self.floorMenu.hidden = YES;
         self.apartmentNumberMenu.hidden = YES;
         
-        self.residencyType = @"";
-        self.neighborhood = @"";
-        self.neighborhoodID = @"";
-        self.buildingNumber = @"";
-        self.buildingNumberID = @"";
-        self.floor = @"";
-        self.floorID = @"";
-        self.apartmentNumber = @"";
-        self.apartmentNumberID = @"";
+        self.residencyType = @" ";
+        self.neighborhood = @" ";
+        self.neighborhoodID = @" ";
+        self.buildingNumber = @" ";
+        self.buildingNumberID = @" ";
+        self.floor = @" ";
+        self.floorID = @" ";
+        self.apartmentNumber = @" ";
+        self.apartmentNumberID = @" ";
     }
 }
 

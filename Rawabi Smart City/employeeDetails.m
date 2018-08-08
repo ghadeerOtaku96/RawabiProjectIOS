@@ -38,21 +38,13 @@
     self.companyArray = [[NSMutableArray alloc]init];
     self.departmentArray = [[NSMutableArray alloc]init];
     self.rawabiAPI = [[RawabiAPI alloc]init];
-    self.requestURL = @"http://172.22.1.111:8080/admin/companies";
-    [self getHttpRequestWithURLString:self.requestURL];
-
-    
-    
-    
     self.questionLabel.text = @"Are an employee at Rawabi?";
     
     self.departmentDropDownMenu.delegate = self;
     self.companyDropDownMenu.delegate = self;
     self.companyDropDownMenu.title = @"Company";
     self.departmentDropDownMenu.title = @"Department";
-
-
-   
+    
     [self addSubview:self.view];
     
     
@@ -61,6 +53,8 @@
 - (IBAction)select:(DLRadioButton *)sender {
     if([sender.currentTitle isEqual:@"YES"]){        
         self.status = [NSNumber numberWithBool:YES];
+        self.requestURL = @"http://172.22.1.111:8080/admin/companies";
+        [self getHttpRequestWithURLString:self.requestURL];
         self.companyDropDownMenu.hidden = NO;
 
     }
@@ -72,6 +66,7 @@
         
         self.company = @"";
         self.companyID = @"";
+        self.domain = @"";
         self.department = @"";
         self.departmentID = @"";
     }

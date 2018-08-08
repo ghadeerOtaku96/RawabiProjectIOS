@@ -11,7 +11,7 @@
 #import "RawabiAPI.h"
 #import "FCAlertView.h"
 #import "SignUpViewController.h"
-
+#import "CollectionViewController.h"
 @interface SignInViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate , RawabiAPIDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *QimageView;

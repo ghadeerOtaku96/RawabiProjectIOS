@@ -223,12 +223,12 @@
 
 - (IBAction)login:(UIButton *)sender {
     
-    if(![self.emailTextField.text isEqualToString:@""] && ![self.passwordTextField.text isEqualToString:@""]){
-        [self.activityIndicator setHidden:NO];
-        [self.activityIndicator startAnimating];
-        [self createPostBodyWithEmail:self.emailTextField.text AndPassword:self.passwordTextField.text];
-        [self postHttpRequest];
-
+        if(![self.emailTextField.text isEqualToString:@""] && ![self.passwordTextField.text isEqualToString:@""]){
+            [self.activityIndicator setHidden:NO];
+            [self.activityIndicator startAnimating];
+            [self createPostBodyWithEmail:self.emailTextField.text AndPassword:self.passwordTextField.text];
+            [self postHttpRequest];
+    
     }
 }
 - (IBAction)showSignUpPage:(UIButton *)sender {
@@ -303,7 +303,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         // go to the next ViewController
         UIStoryboard* st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        UIViewController* nextVC =[st instantiateViewControllerWithIdentifier:@"nextVC"];
+        CollectionViewController* nextVC =[st instantiateViewControllerWithIdentifier:@"collectionview"];
         [self presentViewController:nextVC animated:YES completion:nil];
     });
 }

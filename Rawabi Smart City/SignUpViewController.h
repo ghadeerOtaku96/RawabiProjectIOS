@@ -12,6 +12,7 @@
 #import "personalDetails.h"
 #import "employeeDetails.h"
 #import "residencyDetails.h"
+#import "SignInViewController.h"
 
 
 @interface SignUpViewController : UIViewController <UITextFieldDelegate , UIGestureRecognizerDelegate , RawabiAPIDelegate>

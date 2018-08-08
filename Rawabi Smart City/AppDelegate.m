@@ -23,7 +23,8 @@
     // Override point for customization after application launch.
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:161.0/255.0 green:210.0/255.0 blue:103.0/255.0 alpha:1.0]];
-
+    
+    [[UITabBar appearance]setTintColor:[UIColor colorWithRed:161.0/255.0 green:210.0/255.0 blue:103.0/255.0 alpha:1.0]];
     
     UIStoryboard* st1 = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     NSUserDefaults* user = [NSUserDefaults standardUserDefaults];

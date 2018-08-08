@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "DLRadioButton.h"
-#import "ManaDropDownMenu.h"
 #import "KPDropMenu.h"
 #import "RawabiAPI.h"
-@interface residencyDetails : UIView < CCDropDownMenuDelegate ,RawabiAPIDelegate , KPDropMenuDelegate>
+@interface residencyDetails : UIView <RawabiAPIDelegate , KPDropMenuDelegate>
 @property (strong, nonatomic) IBOutlet UIView *view;
 
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;

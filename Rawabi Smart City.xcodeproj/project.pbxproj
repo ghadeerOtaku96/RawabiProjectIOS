@@ -33,6 +33,7 @@
 		1492D988210706BC0008E546 /* residencyDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D987210706BC0008E546 /* residencyDetails.m */; };
 		149F615721103DB20052CE14 /* RawabiAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F615621103DB20052CE14 /* RawabiAPI.m */; };
 		149F615B21107B2B0052CE14 /* FCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F615A21107B2B0052CE14 /* FCAlertView.m */; };
+		14CCCBCB211AD04C0015BD97 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CCCBCA211AD04C0015BD97 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		149F615621103DB20052CE14 /* RawabiAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawabiAPI.m; sourceTree = "<group>"; };
 		149F615921107B2B0052CE14 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
 		149F615A21107B2B0052CE14 /* FCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertView.m; sourceTree = "<group>"; };
+		14CCCBC9211AD04C0015BD97 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		14CCCBCA211AD04C0015BD97 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 		14557CBF2105F0AB0056859F /* Rawabi Smart City */ = {
 			isa = PBXGroup;
 			children = (
+				14EC63F12119C76500B8D1C6 /* Lunch Screen */,
 				141E84282116F4310048689B /* KPDropDownMenu */,
 				149F615821107B190052CE14 /* FCAlertView */,
 				149F615421103D990052CE14 /* RawabiAPI */,
@@ -308,6 +312,15 @@
 				149F615A21107B2B0052CE14 /* FCAlertView.m */,
 			);
 			name = FCAlertView;
+			sourceTree = "<group>";
+		};
+		14EC63F12119C76500B8D1C6 /* Lunch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				14CCCBC9211AD04C0015BD97 /* CollectionViewController.h */,
+				14CCCBCA211AD04C0015BD97 /* CollectionViewController.m */,
+			);
+			name = "Lunch Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +473,7 @@
 				1492D9832107052A0008E546 /* employeeDetails.m in Sources */,
 				14557D3C2105F22C0056859F /* DLRadioButton.m in Sources */,
 				149F615B21107B2B0052CE14 /* FCAlertView.m in Sources */,
+				14CCCBCB211AD04C0015BD97 /* CollectionViewController.m in Sources */,
 				14557D1D2105F1BB0056859F /* SignUpViewController.m in Sources */,
 				14557D432105F25F0056859F /* ACFloatingTextField.m in Sources */,
 				14557D152105F16D0056859F /* contentViewController.m in Sources */,

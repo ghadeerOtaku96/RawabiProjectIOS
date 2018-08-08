@@ -246,8 +246,13 @@
     [self.firstView.emailTextField.text isEqualToString:@""] ||
     [self.firstView.phoneTextField.text isEqualToString:@""]) ;
     
-    if(index >= 99 || status){
+    if(index >= 50){
         [sender setTitle:@"SUBMIT" forState:UIControlStateNormal];
+    }
+
+    
+    if(index >= 99 || status){
+        
         [self.activityIndicator setHidden:NO];
         [self.activityIndicator startAnimating];
         [self createPostBody];
@@ -275,12 +280,16 @@
         [self.stepperView setIndex:index animated:YES];
         [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x -1- self.scrollView.frame.size.width/3, 0) animated:YES];
         NSLog(@"index %d",index);
+        
     }
     else{
         sender.enabled = NO;
         index = 0;
+        
     }
     
+    if(index == 50 || index == 0 || index == 2)
+        [self.nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
 }
 
 
@@ -370,9 +379,59 @@
     NSDictionary* receivedData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
     self.receivedData = receivedData;
     if(receivedData){
+        if([receivedData count]>2){
+            NSLog(@"SUCCESSFUL");
+            [self signUpSuccessfully];
+            
+        }
+        else{
+            NSLog(@"FAILEDSSS");
+            [self failedToSignUp];
+        }
         NSLog(@"DONE");
     }
 }
+
+#pragma mark - SignUp Error Handling
+-(void)signUpSuccessfully{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Verification"message:@"Check out your email for Verification" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden = YES;
+    alert.tintColor = [UIColor colorWithRed:161.0/255.0 green:210.0/255.0 blue:103.0/255.0 alpha:1.0];
+    
+    [alert show];
+
+}
+
+-(void)failedToSignUp{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sign up Error"message:@"Failed to create the account. This email is already exist, please try with different email!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden = YES;
+    alert.tintColor = [UIColor redColor];
+    
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger) buttonIndex{
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden = YES;
+    
+    if([alertView.title isEqualToString:@"Email Verification"]){
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // go to the next ViewController
+            SignInViewController* nextVC =[self.storyboard instantiateViewControllerWithIdentifier:@"SignInViewController"];
+            [self presentViewController:nextVC animated:YES completion:nil];
+        });
+        
+    }
+
+}
+
 /*
 #pragma mark - Navigation
 
