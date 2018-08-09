@@ -33,6 +33,10 @@
 		1492D988210706BC0008E546 /* residencyDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1492D987210706BC0008E546 /* residencyDetails.m */; };
 		149F615721103DB20052CE14 /* RawabiAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F615621103DB20052CE14 /* RawabiAPI.m */; };
 		149F615B21107B2B0052CE14 /* FCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F615A21107B2B0052CE14 /* FCAlertView.m */; };
+		14C02E0E211C2D5800C8A6BD /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C02E0D211C2D5800C8A6BD /* WebRTC.framework */; };
+		14C02E10211C2D9E00C8A6BD /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14C02E0D211C2D5800C8A6BD /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14C02E12211C2DA200C8A6BD /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C02E0B211C2D4D00C8A6BD /* Rainbow.framework */; };
+		14C02E13211C2DA200C8A6BD /* Rainbow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14C02E0B211C2D4D00C8A6BD /* Rainbow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14CCCBCB211AD04C0015BD97 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CCCBCA211AD04C0015BD97 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,21 @@
 			remoteInfo = "Rawabi Smart City";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14C02E11211C2D9E00C8A6BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14C02E10211C2D9E00C8A6BD /* WebRTC.framework in Embed Frameworks */,
+				14C02E13211C2DA200C8A6BD /* Rainbow.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		141E84292116F46F0048689B /* KPDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDropMenu.h; sourceTree = "<group>"; };
@@ -102,6 +121,8 @@
 		149F615621103DB20052CE14 /* RawabiAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawabiAPI.m; sourceTree = "<group>"; };
 		149F615921107B2B0052CE14 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
 		149F615A21107B2B0052CE14 /* FCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertView.m; sourceTree = "<group>"; };
+		14C02E0B211C2D4D00C8A6BD /* Rainbow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rainbow.framework; sourceTree = "<group>"; };
+		14C02E0D211C2D5800C8A6BD /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		14CCCBC9211AD04C0015BD97 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		14CCCBCA211AD04C0015BD97 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C02E0E211C2D5800C8A6BD /* WebRTC.framework in Frameworks */,
+				14C02E12211C2DA200C8A6BD /* Rainbow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +166,8 @@
 		14557CB42105F0AB0056859F = {
 			isa = PBXGroup;
 			children = (
+				14C02E0D211C2D5800C8A6BD /* WebRTC.framework */,
+				14C02E0B211C2D4D00C8A6BD /* Rainbow.framework */,
 				14557CBF2105F0AB0056859F /* Rawabi Smart City */,
 				14557CD92105F0AC0056859F /* Rawabi Smart CityTests */,
 				14557CE42105F0AC0056859F /* Rawabi Smart CityUITests */,
@@ -333,6 +358,7 @@
 				14557CB92105F0AB0056859F /* Sources */,
 				14557CBA2105F0AB0056859F /* Frameworks */,
 				14557CBB2105F0AB0056859F /* Resources */,
+				14C02E11211C2D9E00C8A6BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -607,6 +633,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Rawabi Smart City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-City";
@@ -618,6 +648,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Rawabi Smart City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "asal.Rawabi-Smart-City";
