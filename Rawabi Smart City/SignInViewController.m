@@ -308,12 +308,12 @@
     self.receivedData = receivedData;
     if(![[self.receivedData valueForKey:@"message"] isKindOfClass:[NSDictionary class]]){
         NSLog(@"WRONG SIGNIN");
-        [self failedToSignIn];
+        //[self failedToSignIn];
 
     }
     else {
         NSLog(@"CORRECT SIGNIN");
-        [self signInSuccessfully];
+        //[self signInSuccessfully];
     }
     return ;
 }
