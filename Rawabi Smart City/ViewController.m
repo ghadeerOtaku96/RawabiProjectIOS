@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+#pragma mark - Apllication LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -33,6 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Event Handling
 - (IBAction)signIn:(UIButton *)sender {
     
     SignInViewController* nextVC = (SignInViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"SignInViewController"];

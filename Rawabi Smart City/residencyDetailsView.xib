@@ -40,15 +40,12 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                             <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
-                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
-                            <real key="value" value="60"/>
+                            <real key="value" value="49"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                             <real key="value" value="15"/>
@@ -67,15 +64,12 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                             <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
-                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
-                            <real key="value" value="60"/>
+                            <real key="value" value="49"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                             <real key="value" value="15"/>
@@ -94,15 +88,12 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                             <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
-                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
-                            <real key="value" value="60"/>
+                            <real key="value" value="49"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                             <real key="value" value="15"/>
@@ -121,15 +112,12 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                             <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
-                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
-                            <real key="value" value="60"/>
+                            <real key="value" value="49"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                             <real key="value" value="15"/>
@@ -148,15 +136,12 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                             <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="itemBackground">
-                            <color key="value" red="0.62487989659999998" green="0.81084311009999999" blue="0.40226823090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="itemTextColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Select An Item"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
-                            <real key="value" value="60"/>
+                            <real key="value" value="49"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                             <real key="value" value="15"/>

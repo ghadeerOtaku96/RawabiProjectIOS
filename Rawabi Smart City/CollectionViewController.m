@@ -21,6 +21,7 @@
 
 static NSString * const reuseIdentifier = @"cell";
 
+#pragma mark - Application LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     

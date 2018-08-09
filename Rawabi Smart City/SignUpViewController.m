@@ -96,12 +96,6 @@
         self.nextButton.clipsToBounds = YES;
            self.nextButton.enabled = NO;
     });
-   
-  
-
-    
-    
-  
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -136,9 +130,6 @@
     CGPoint scrollPoint = CGPointMake(0.0,  2*visibleRect.size.height );
     [self.scrollView setContentOffset:scrollPoint animated:YES];
         self.nextButton.enabled = YES;
-
-        
- 
 
 }
 -(void)textFieldDidEndEditing:(ACFloatingTextField *)textField{

@@ -26,8 +26,6 @@
 
 #pragma mark - Application LifeCycle
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -227,7 +225,8 @@
             [self.activityIndicator setHidden:NO];
             [self.activityIndicator startAnimating];
             [self createPostBodyWithEmail:self.emailTextField.text AndPassword:self.passwordTextField.text];
-            [self postHttpRequest];
+            //[self postHttpRequest];
+            
     
     }
 }
@@ -239,7 +238,6 @@
 -(void)createPostBodyWithEmail:(NSString*)email AndPassword:(NSString*)password{
     
     NSDictionary* dict = @{@"email":email, @"password":password};
-    
     NSError* error = nil;
     if([NSJSONSerialization isValidJSONObject:dict]){
         self.postBody = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
@@ -300,12 +298,10 @@
         [self.user synchronize];
     }
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        // go to the next ViewController
-        UIStoryboard* st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        CollectionViewController* nextVC =[st instantiateViewControllerWithIdentifier:@"collectionview"];
-        [self presentViewController:nextVC animated:YES completion:nil];
-    });
+    // go to the next ViewController
+    UIStoryboard* st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UITabBarController * nextVC =[st instantiateViewControllerWithIdentifier:@"controller"];
+    [self presentViewController:nextVC animated:YES completion:nil];
 }
 
 -(void)failedToSignIn{

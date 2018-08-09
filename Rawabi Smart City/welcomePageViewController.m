@@ -22,14 +22,16 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    imagesArray = [[NSArray alloc]initWithObjects:@"im1",@"im2",@"im3", nil];
+    imagesArray = [[NSArray alloc]initWithObjects:@"im3",@"im2",@"im1", nil];
     self.dataSource = self;
     self.delegate = self;
-    contentViewController* contentVC = (contentViewController *)[self viewcontrollerAtIndex:0];
-    NSArray* arrayVC = [NSArray arrayWithObject:contentVC];
+    contentViewController* contentVC = (contentViewController *)[self viewcontrollerAtIndex:2];
+    NSArray* vc = @[contentVC];
+ 
 
+        [self setViewControllers:vc direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
-    [self setViewControllers:arrayVC direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
     
    
 }
@@ -51,7 +53,7 @@
     return nil;
 }
 
-#pragma mark - UIPageViewControllerDataSource implementation
+#pragma mark - UIPageViewController DataSource implementation
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
     
     NSUInteger index = ((contentViewController *)viewController).valueIndex;

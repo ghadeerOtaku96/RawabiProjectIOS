@@ -29,28 +29,29 @@
     UIStoryboard* st1 = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     NSUserDefaults* user = [NSUserDefaults standardUserDefaults];
     nextVC1 = [st1 instantiateViewControllerWithIdentifier:@"SignInViewController"];
-    nextVC2 = [st1 instantiateViewControllerWithIdentifier:@"nextVC"];
+    nextVC2 = [st1 instantiateViewControllerWithIdentifier:@"controller"];
     welcomeController = [st1 instantiateViewControllerWithIdentifier:@"FirstViewController"];
     
     if(!user){
         dispatch_async(dispatch_get_main_queue(), ^{
            
-            [self.window.rootViewController.navigationController pushViewController:nextVC1 animated:YES];});
+            [self.window.rootViewController.navigationController pushViewController:welcomeController animated:YES];});
     }
+    
     if([user objectForKey:@"currentUser"] && [user objectForKey:@"currentPassword"] ){
         NSLog(@"eeeuser%@%@", [user objectForKey:@"currentUser"], [user objectForKey:@"currentPassword"]);
+        NSString * email = [[NSString alloc]initWithString:[user objectForKey:@"currentUser"]];
+        NSString * password = [[NSString alloc]initWithString:[user objectForKey:@"currentPassword"]];
         // login stratigy
-    
-        [nextVC1 createPostBodyWithEmail:[user objectForKey:@"currentUser"] AndPassword:[user objectForKey:@"currentPassword"]];
+
+        [nextVC1 createPostBodyWithEmail:email AndPassword:password];
         [nextVC1 postHttpRequest];
-        //[self.window.rootViewController.navigationController pushViewController:nextVC2 animated:YES];
-        //[welcomeController.navigationController pushViewController:nextVC2 animated:YES];
-        [welcomeController presentViewController:nextVC2 animated:YES completion:nil];
+        [nextVC1 presentViewController:nextVC2 animated:YES completion:nil];
         
     }
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:161.0/255.0 green:210.0/255.0 blue:103.0/255.0 alpha:1.0];
     pageControl.backgroundColor = [UIColor whiteColor];
 
 
