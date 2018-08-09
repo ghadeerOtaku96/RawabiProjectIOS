@@ -82,7 +82,9 @@
     [self.emailTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
     
-    //add login notification **Rainbow-SDK
+// login notification **Rainbow-SDK
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogin:) name:kLoginManagerDidLoginSucceeded object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFailedToLogin:) name:kLoginManagerDidFailedToAuthenticate object:nil];
     
 }
 
@@ -90,6 +92,9 @@
     
     [super viewWillDisappear:animated];
     [self deregisterFromKeyboardNotifications];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:kLoginManagerDidLoginSucceeded];
+    [[NSNotificationCenter defaultCenter] removeObserver:kLoginManagerDidFailedToAuthenticate];
 }
 
 #pragma mark - Keyboard Notifications
@@ -224,8 +229,10 @@
         if(![self.emailTextField.text isEqualToString:@""] && ![self.passwordTextField.text isEqualToString:@""]){
             [self.activityIndicator setHidden:NO];
             [self.activityIndicator startAnimating];
+            
+            [self loginByRainbowUsingEmai:self.emailTextField.text andPassword:self.passwordTextField.text];
             [self createPostBodyWithEmail:self.emailTextField.text AndPassword:self.passwordTextField.text];
-            //[self postHttpRequest];
+            [self postHttpRequest];
             
     
     }
@@ -234,7 +241,30 @@
 
 }
 
-#pragma mark - HTTP Requests handling
+#pragma mark - Rainbow SDK Login implementation
+
+-(void)loginByRainbowUsingEmai:(NSString*)email andPassword:(NSString*)password
+{
+    [[ServicesManager sharedInstance].loginManager setUsername:email andPassword:password];
+    [[ServicesManager sharedInstance].loginManager connect];
+}
+
+-(void) didLogin:(NSNotification *) notification {
+    NSLog(@"LOGIN AS A RAINBOW USER");
+    [self signInSuccessfully];
+    
+}
+
+
+// what to do when the login failed
+
+-(void) didFailedToLogin:(NSNotificationCenter *)notification{
+    NSLog(@"NOT A RAINBOW USER");
+    [self failedToSignIn];
+}
+
+
+#pragma mark - Rawabi API Login HTTP Requests handling
 -(void)createPostBodyWithEmail:(NSString*)email AndPassword:(NSString*)password{
     
     NSDictionary* dict = @{@"email":email, @"password":password};
